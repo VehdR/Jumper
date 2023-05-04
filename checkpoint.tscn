@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://821qgcdqpunb"]
+
+[ext_resource type="Texture2D" uid="uid://cr1o11gsjfn44" path="res://Asset Packs for HW2/Side Scroller/Pixel Art Platformer Tileset/Props/sun.png" id="1_fftnw"]
+[ext_resource type="Script" path="res://teleporter.gd" id="1_tpx88"]
+
+[node name="Checkpoint" type="Area2D"]
+texture_filter = 1
+scale = Vector2(2, 2)
+script = ExtResource("1_tpx88")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-3, -7, -5, -6, -6, -5, -7, -4, -8, -2, -8, 3, -7, 5, -6, 6, -5, 7, -3, 8, 2, 8, 4, 7, 5, 6, 6, 5, 7, 3, 7, -2, 6, -4, 5, -5, 4, -6, 2, -7)
+
+[node name="Sun" type="Sprite2D" parent="."]
+texture = ExtResource("1_fftnw")

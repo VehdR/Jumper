@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dudcqe6l3oq6c"
+path="res://.godot/imported/cave-inner-corner.png-bc6502cc824ea5e314c2545a11a66336.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Asset Packs for HW2/Side Scroller/Pixel Art Platformer Tileset/Individual Tiles/cave-inner-corner.png"
+dest_files=["res://.godot/imported/cave-inner-corner.png-bc6502cc824ea5e314c2545a11a66336.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

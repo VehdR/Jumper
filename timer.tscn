@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bumxfdkdo5fm"]
+
+[ext_resource type="Script" path="res://timer.gd" id="1_lan3r"]
+[ext_resource type="FontFile" uid="uid://ntnbqwobfhc4" path="res://Pixellari.ttf" id="1_wtg5a"]
+
+[node name="Timer" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lan3r")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_wtg5a")
+theme_override_font_sizes/font_size = 30
+text = "00:00.000"
+horizontal_alignment = 2

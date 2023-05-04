@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bys4ekolxxo2g"]
+
+[ext_resource type="Texture2D" uid="uid://bn2n8b06tf1p2" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/frontbottom.png" id="1_dvwqi"]
+[ext_resource type="Script" path="res://die_box.gd" id="1_lcb1g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_727ig"]
+size = Vector2(3033.33, 52.0001)
+
+[node name="DieBox" type="Area2D"]
+texture_filter = 1
+script = ExtResource("1_lcb1g")
+
+[node name="Frontbottom" type="Sprite2D" parent="."]
+scale = Vector2(3.383, 3.383)
+texture = ExtResource("1_dvwqi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.52588e-05, 4.7834e-05)
+rotation = -3.14159
+scale = Vector2(0.357363, -1)
+shape = SubResource("RectangleShape2D_727ig")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
