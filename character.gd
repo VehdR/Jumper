@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+# main player
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -430.0
@@ -51,3 +51,7 @@ func _physics_process(delta):
 
 func _on_die_box_player_entered():
 	get_tree().reload_current_scene()
+
+
+func _on_teleporter_body_entered(body):
+	pass # Replace with function body.

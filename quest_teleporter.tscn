@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://c20xvmlpetex6"]
+
+[ext_resource type="PackedScene" uid="uid://dupm2uu4c16md" path="res://speedrun_teleporter.tscn" id="1_ybx8m"]
+[ext_resource type="Script" path="res://quest_teleporter.gd" id="2_4v1ug"]
+
+[node name="Teleporter" instance=ExtResource("1_ybx8m")]
+script = ExtResource("2_4v1ug")

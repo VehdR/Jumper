@@ -1,6 +1,6 @@
 2a60927148abd1d33b818b535e306557
-::res://::1683229613
-character.gd::GDScript::-1::1682441978::0::1::::<>CharacterBody2D<>::
+::res://::1684166651
+character.gd::GDScript::-1::1683909979::0::1::::<>CharacterBody2D<>::
 character.tscn::PackedScene::609742665396971788::1682441978::0::1::::<><>::res://character.gd<>uid://bmp7tgjbaw8lk
 checkpoint.tscn::PackedScene::2373577572317099491::1682441978::0::1::::<><>::uid://cr1o11gsjfn44<>res://teleporter.gd
 die_box.gd::GDScript::-1::1682441978::0::1::::<>Area2D<>::
@@ -9,12 +9,14 @@ export_presets.cfg::TextFile::-1::1682441978::0::1::::<><>::
 gem.gd::GDScript::-1::1682441978::0::1::::<>Area2D<>::
 gem.tscn::PackedScene::3544408609791329211::1682441978::0::1::::<><>::res://gem.gd<>uid://b2lao2oxsulfk
 icon.svg::CompressedTexture2D::8257243341027156599::1682441978::1682441978::1::::<><>::
-menu.tscn::PackedScene::2897012351772145526::1682998792::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://couuk22drpblb<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://ntnbqwobfhc4<>uid://ixmmw0ii76j5<>uid://xm3noqv7558j
+menu.tscn::PackedScene::2897012351772145526::1683914324::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://couuk22drpblb<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://ntnbqwobfhc4<>uid://ixmmw0ii76j5<>uid://xm3noqv7558j
 Pixellari.ttf::FontFile::952470126318362101::1682441978::1682441978::1::::<><>::
-quest_1.tscn::PackedScene::8691854878568343597::1682998792::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://couuk22drpblb<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://xm3noqv7558j<>uid://ixmmw0ii76j5
+quest_1.tscn::PackedScene::8691854878568343597::1683229954::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://couuk22drpblb<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://xm3noqv7558j<>uid://ixmmw0ii76j5
 README.md::TextFile::-1::1683229278::0::1::::<><>::
-speedrun.tscn::PackedScene::2957707600370603979::1682998791::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://xm3noqv7558j<>uid://couuk22drpblb<>uid://ixmmw0ii76j5<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://bys4ekolxxo2g<>uid://ntnbqwobfhc4<>uid://bqq65ldsrawvj<>uid://bumxfdkdo5fm<>uid://bq388t0yhe512<>uid://uuo1gottmtwd
-teleporter.gd::GDScript::-1::1682441978::0::1::::<>Area2D<>::
+speedrun.tscn::PackedScene::2957707600370603979::1683910173::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://xm3noqv7558j<>uid://couuk22drpblb<>uid://ixmmw0ii76j5<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://bys4ekolxxo2g<>uid://ntnbqwobfhc4<>uid://bqq65ldsrawvj<>uid://bumxfdkdo5fm<>uid://bq388t0yhe512<>uid://uuo1gottmtwd
+sun.png::CompressedTexture2D::5807141389820707835::1683918446::1683918435::1::::<><>::
+teleporter.gd::GDScript::-1::1683918576::0::1::::<>Area2D<>::
+teleporter.tscn::PackedScene::8497588076727669016::1683918576::0::1::::<><>::res://teleporter.gd<>uid://co0a1gofk3xlj
 timer.gd::GDScript::-1::1682441978::0::1::::<>Control<>::
 timer.tscn::PackedScene::112246343602350414::1682441978::0::1::::<><>::res://timer.gd<>uid://ntnbqwobfhc4
 timer_check.gd::GDScript::-1::1682441978::0::1::::<>Area2D<>::

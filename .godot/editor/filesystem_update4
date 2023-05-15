@@ -1,3 +1,13 @@
-res://menu.tscn
 res://speedrun.tscn
+res://menu.tscn
+res://teleporter.tscn
+res://tutorial.tscn
+res://teleporter.gd
+res://speedrun_teleporter.tscn
+res://speedrun_teleporter.gd
 res://quest_1.tscn
+res://character.gd
+res://tutorial_teleporter.tscn
+res://tutorial_teleporter.gd
+res://quest_teleporter.tscn
+res://quest_teleporter.gd

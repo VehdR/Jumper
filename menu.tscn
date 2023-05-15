@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bhjlmt6ma45vm"]
+[gd_scene load_steps=15 format=3 uid="uid://bhjlmt6ma45vm"]
 
 [ext_resource type="Texture2D" uid="uid://ccdu2v5xxap8r" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/sky.png" id="1_84nfw"]
 [ext_resource type="Texture2D" uid="uid://couuk22drpblb" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/clouds.png" id="2_405pe"]
@@ -9,6 +9,9 @@
 [ext_resource type="FontFile" uid="uid://ntnbqwobfhc4" path="res://Pixellari.ttf" id="7_8ylh3"]
 [ext_resource type="PackedScene" uid="uid://ixmmw0ii76j5" path="res://character.tscn" id="8_a5fhu"]
 [ext_resource type="Texture2D" uid="uid://xm3noqv7558j" path="res://Asset Packs for HW2/Side Scroller/Pixel Art Platformer Tileset/Platformer Tiles.png" id="9_pq1jt"]
+[ext_resource type="PackedScene" uid="uid://dupm2uu4c16md" path="res://speedrun_teleporter.tscn" id="10_60x0i"]
+[ext_resource type="PackedScene" uid="uid://c3uclyq7ieb2s" path="res://tutorial_teleporter.tscn" id="11_uc56i"]
+[ext_resource type="PackedScene" uid="uid://c20xvmlpetex6" path="res://quest_teleporter.tscn" id="12_74uwb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m13v0"]
 texture = ExtResource("9_pq1jt")
@@ -1245,7 +1248,7 @@ scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_bev5j")
 format = 2
 layer_0/name = "Platforms"
-layer_0/tile_data = PackedInt32Array(1376268, 1769472, 3, 1376269, 1769472, 3, 1376270, 1769472, 3, 1376271, 1769472, 3, 1376272, 1769472, 3, 1376273, 1769472, 3, 1376274, 1769472, 3, 1376275, 1769472, 3, 1376276, 1769472, 3, 1376277, 1769472, 3, 1376278, 1769472, 3, 1376279, 1769472, 3, 1376267, 1769472, 3, 1376266, 1769472, 3, 1376265, 1769472, 3, 1376264, 1769472, 3, 1376263, 1769472, 3, 1376262, 1769472, 3, 1376261, 1769472, 3, 1376260, 1769472, 3, 1376259, 1769472, 3, 1376258, 1769472, 3, 1376257, 1703936, 3, 1376280, 1835008, 3, 1114117, 1638400, 1, 917523, 1638400, 1, 1245206, 1638400, 1, 1048594, 1703936, 3, 1048595, 1769472, 3, 1048596, 1835008, 3, 1179663, 1966080, 3)
+layer_0/tile_data = PackedInt32Array(1376268, 1769472, 3, 1376269, 1769472, 3, 1376270, 1769472, 3, 1376271, 1769472, 3, 1376272, 1769472, 3, 1376273, 1769472, 3, 1376274, 1769472, 3, 1376275, 1769472, 3, 1376276, 1769472, 3, 1376277, 1769472, 3, 1376278, 1769472, 3, 1376279, 1769472, 3, 1376267, 1769472, 3, 1376266, 1769472, 3, 1376265, 1769472, 3, 1376264, 1769472, 3, 1376263, 1769472, 3, 1376262, 1769472, 3, 1376261, 1769472, 3, 1376260, 1769472, 3, 1376259, 1769472, 3, 1376258, 1769472, 3, 1376257, 1703936, 3, 1376280, 1835008, 3, 1048594, 1703936, 3, 1048595, 1769472, 3, 1048596, 1835008, 3, 1179663, 1966080, 3)
 layer_1/name = "Decor"
 layer_1/enabled = true
 layer_1/modulate = Color(1, 1, 1, 1)
@@ -1258,3 +1261,16 @@ layer_1/tile_data = PackedInt32Array()
 position = Vector2(395, 65)
 
 [node name="Camera2D" type="Camera2D" parent="Character"]
+
+[node name="Teleporter" parent="." instance=ExtResource("10_60x0i")]
+position = Vector2(625, 475)
+
+[node name="Teleporter" parent="Teleporter" instance=ExtResource("11_uc56i")]
+position = Vector2(47, 79)
+scale = Vector2(1, 1)
+
+[node name="Teleporter" parent="Teleporter/Teleporter" instance=ExtResource("12_74uwb")]
+position = Vector2(-273.5, -29.5)
+scale = Vector2(1, 1)
+
+[connection signal="body_entered" from="Teleporter" to="Character" method="_on_teleporter_body_entered"]
