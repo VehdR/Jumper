@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dv3ntyort2jc4"]
+[gd_scene load_steps=12 format=3 uid="uid://dv3ntyort2jc4"]
 
 [ext_resource type="Texture2D" uid="uid://ccdu2v5xxap8r" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/sky.png" id="1_xax2m"]
 [ext_resource type="Texture2D" uid="uid://couuk22drpblb" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/clouds.png" id="2_apky6"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bn2n8b06tf1p2" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/frontbottom.png" id="6_8p358"]
 [ext_resource type="Texture2D" uid="uid://xm3noqv7558j" path="res://Asset Packs for HW2/Side Scroller/Pixel Art Platformer Tileset/Platformer Tiles.png" id="7_8hjpc"]
 [ext_resource type="PackedScene" uid="uid://ixmmw0ii76j5" path="res://character.tscn" id="8_50uxe"]
+[ext_resource type="PackedScene" uid="uid://bq388t0yhe512" path="res://ui.tscn" id="9_l03xi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m13v0"]
 texture = ExtResource("7_8hjpc")
@@ -1215,17 +1216,16 @@ position = Vector2(395, 65)
 
 [node name="Camera2D" type="Camera2D" parent="Character"]
 
+[node name="UI" parent="Character/Camera2D" instance=ExtResource("9_l03xi")]
+offset_left = -268.5
+offset_top = -150.0
+offset_right = -268.5
+offset_bottom = -150.0
+scale = Vector2(0.75, 0.75)
+
 [node name="Label" type="Label" parent="Character/Camera2D"]
 offset_left = 239.5
 offset_top = -162.0
 offset_right = 285.5
 offset_bottom = -136.0
 text = "00000"
-
-[node name="Label2" type="Label" parent="Character/Camera2D"]
-offset_left = -287.0
-offset_top = -161.5
-offset_right = -225.0
-offset_bottom = -135.5
-text = "Gems: 0
-Lives: 3"

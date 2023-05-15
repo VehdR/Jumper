@@ -12,3 +12,6 @@ res://tutorial_teleporter.gd
 res://quest_teleporter.tscn
 res://quest_teleporter.gd
 res://character.tscn
+res://ui.tscn
+res://lives.tscn
+res://lives.gd
