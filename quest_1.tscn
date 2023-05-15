@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dv3ntyort2jc4"]
+[gd_scene load_steps=15 format=3 uid="uid://dv3ntyort2jc4"]
 
 [ext_resource type="Texture2D" uid="uid://ccdu2v5xxap8r" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/sky.png" id="1_xax2m"]
 [ext_resource type="Texture2D" uid="uid://couuk22drpblb" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/clouds.png" id="2_apky6"]
@@ -7,8 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://snw5feha5gjv" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/front.png" id="5_5f2v0"]
 [ext_resource type="Texture2D" uid="uid://bn2n8b06tf1p2" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/frontbottom.png" id="6_8p358"]
 [ext_resource type="Texture2D" uid="uid://xm3noqv7558j" path="res://Asset Packs for HW2/Side Scroller/Pixel Art Platformer Tileset/Platformer Tiles.png" id="7_8hjpc"]
+[ext_resource type="FontFile" uid="uid://ntnbqwobfhc4" path="res://Pixellari.ttf" id="7_m0056"]
 [ext_resource type="PackedScene" uid="uid://ixmmw0ii76j5" path="res://character.tscn" id="8_50uxe"]
 [ext_resource type="PackedScene" uid="uid://bq388t0yhe512" path="res://ui.tscn" id="9_l03xi"]
+[ext_resource type="PackedScene" uid="uid://bqq65ldsrawvj" path="res://gem.tscn" id="9_xi2ng"]
+[ext_resource type="PackedScene" uid="uid://bys4ekolxxo2g" path="res://die_box.tscn" id="10_pkoro"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m13v0"]
 texture = ExtResource("7_8hjpc")
@@ -1045,11 +1048,12 @@ texture = ExtResource("7_8hjpc")
 29:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 29:3/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="TileSet" id="TileSet_t4vo3"]
+[sub_resource type="TileSet" id="TileSet_0fuag"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_m13v0")
 
-[node name="Quest1" type="Node2D"]
+[node name="SpeedRun" type="Node2D"]
+texture_filter = 1
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -1196,13 +1200,24 @@ texture = ExtResource("6_8p358")
 [node name="GameText" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
 
+[node name="Label3" type="Label" parent="ParallaxBackground/GameText"]
+offset_left = 213.0
+offset_top = 495.0
+offset_right = 588.0
+offset_bottom = 553.0
+theme_override_fonts/font = ExtResource("7_m0056")
+theme_override_font_sizes/font_size = 25
+text = "Collect all 10 gems!
+And come back here ASAP."
+horizontal_alignment = 1
+
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
 scale = Vector2(2, 2)
-tile_set = SubResource("TileSet_t4vo3")
+tile_set = SubResource("TileSet_0fuag")
 format = 2
 layer_0/name = "Platforms"
-layer_0/tile_data = PackedInt32Array(1376268, 1769472, 3, 1376269, 1769472, 3, 1376270, 1769472, 3, 1376271, 1769472, 3, 1376267, 1769472, 3, 1376266, 1769472, 3, 1376265, 1769472, 3, 1376264, 1703936, 3, 1376272, 1835008, 3, 1179669, 1703936, 3, 1179670, 1769472, 3, 1179671, 1835008, 3, 1507356, 1703936, 3, 1507357, 1769472, 3, 1507358, 1835008, 3, 852004, 1703936, 3, 852005, 1769472, 3, 852006, 1835008, 3)
+layer_0/tile_data = PackedInt32Array(1376267, 1703936, 3, 1376268, 1769472, 3, 1376269, 1835008, 3, 1376280, 1703936, 3, 1376281, 1769472, 3, 1376282, 1835008, 3, 1966134, 1769472, 5, 1966135, 1769472, 5, 1966136, 1769472, 5, 1966137, 1769472, 5, 1966138, 1769472, 5, 1966139, 1769472, 5, 1966140, 1769472, 5, 1966141, 1769472, 5, 1966142, 1769472, 5, 1966143, 1769472, 5, 1966144, 1703936, 10, 1900608, 1638400, 6, 1900609, 1703936, 6, 1835073, 1703936, 5, 1835074, 1703936, 6, 1769538, 1703936, 5, 1769539, 1769472, 5, 1900611, 1900544, 8, 1966145, 1769472, 6, 1835076, 1769472, 9, 1835077, 1769472, 9, 1835078, 1769472, 9, 1835079, 1769472, 9, 1769540, 1769472, 5, 1769541, 1769472, 5, 1769542, 1769472, 5, 1769543, 1769472, 5, 2031680, 1703936, 11, 2097217, 1703936, 8, 2097219, 1769472, 5, 2097220, 1769472, 5, 2097221, 1769472, 5, 1769544, 1769472, 5, 1769545, 1769472, 5, 1769546, 1769472, 5, 1769547, 1769472, 5, 1966133, 1638400, 4, 2031669, 1638400, 5, 2031670, 1769472, 9, 2031671, 1769472, 9, 2031672, 1769472, 9, 2031673, 1769472, 9, 2031674, 1769472, 9, 2031675, 1769472, 9, 2031676, 1769472, 9, 2031677, 1769472, 9, 2031678, 1769472, 9, 2031679, 1769472, 9, 2097216, 1638400, 8, 2162753, 1703936, 9, 2162754, 1769472, 9, 2162755, 1769472, 9, 2162756, 1769472, 9, 2162757, 1769472, 9, 1835080, 1769472, 9, 1835081, 1769472, 9, 1835082, 1769472, 9, 1835083, 1769472, 9, 1769548, 1900544, 4, 1310731, 1900544, 1, 1900598, 1703936, 1, 1835062, 1703936, 0, 1704004, 1572864, 0, 1900604, 1572864, 1, 1900600, 1900544, 1, 1900601, 1835008, 1, 1835070, 1703936, 0, 1900606, 1703936, 1, 1638475, 1703936, 0, 1704011, 1703936, 1, 1704006, 1900544, 1, 1638473, 1966080, 0, 1704009, 1966080, 1, 1572946, 1638400, 7, 1507410, 1638400, 7, 1441874, 1638400, 7, 1376338, 1638400, 7, 1310802, 1638400, 7, 1245266, 1638400, 7, 1638482, 1703936, 9, 1638483, 1769472, 9, 1638484, 1835008, 9, 1572948, 1900544, 7, 1507412, 1900544, 7, 1441876, 1900544, 7, 1376340, 1900544, 7, 1310804, 1900544, 7, 1245268, 1900544, 7, 1179730, 1703936, 5, 1179731, 1769472, 5, 1179732, 1835008, 5, 1245267, 1769472, 7, 1310803, 1769472, 7, 1376339, 1769472, 7, 1441875, 1769472, 7, 1507411, 1769472, 7, 1572947, 1769472, 7, 1179726, 1900544, 7, 1114190, 1900544, 7, 1048654, 1900544, 7, 983118, 1900544, 7, 917582, 1900544, 7, 852046, 1900544, 7, 786510, 1835008, 5, 786509, 1769472, 5, 786508, 1703936, 5, 1245260, 1703936, 9, 1245261, 1769472, 9, 1245262, 1835008, 9, 852044, 1638400, 7, 917580, 1638400, 7, 983116, 1638400, 7, 1048652, 1638400, 7, 1114188, 1638400, 7, 1179724, 1638400, 7, 852045, 1769472, 7, 917581, 1769472, 7, 983117, 1769472, 7, 1048653, 1769472, 7, 1114189, 1769472, 7, 1179725, 1769472, 7, 1245202, 1966080, 3, 1179681, 1835008, 3, 1179680, 1769472, 3, 983081, 1835008, 3, 983080, 1769472, 3, 1179679, 1703936, 3, 983079, 1703936, 3, 1114145, 1835008, 1, 720980, 1703936, 3, 720981, 1769472, 3, 720982, 1835008, 3, 655444, 1572864, 1, 655446, 1769472, 1, 655445, 1900544, 1, 1441839, 1703936, 3, 1441840, 1769472, 3, 1441841, 1835008, 3, 720998, 1703936, 3, 720999, 1769472, 3, 721000, 1835008, 3, 1835084, 1900544, 5, 1835075, 1835008, 8, 2097218, 1835008, 6, 1966146, 1900544, 7, 1900610, 1835008, 8, 2031682, 1900544, 7, 2031681, 1769472, 7, 1966163, 1638400, 4, 2031699, 1638400, 5, 1966164, 1900544, 4, 2031700, 1900544, 5, 2097222, 1769472, 5, 2097223, 1769472, 5, 2097224, 1769472, 5, 2097225, 1900544, 4, 2162758, 1769472, 9, 2162759, 1769472, 9, 2162760, 1769472, 9, 2162761, 1900544, 5, 589945, 1638400, 4, 655481, 1638400, 7, 721017, 1638400, 7, 786553, 1638400, 7, 852089, 1638400, 7, 917625, 1703936, 10, 917624, 1769472, 5, 917623, 1769472, 5, 917622, 1769472, 5, 917621, 1769472, 5, 917620, 1769472, 5, 917619, 1638400, 4, 983155, 1638400, 5, 983156, 1769472, 9, 983157, 1769472, 9, 983158, 1769472, 9, 983159, 1769472, 9, 983160, 1769472, 9, 983161, 1769472, 9, 983162, 1835008, 9, 917626, 1900544, 7, 655482, 1900544, 7, 721018, 1900544, 7, 786554, 1900544, 7, 852090, 1900544, 7, 589946, 1900544, 4)
 layer_1/name = "Decor"
 layer_1/enabled = true
 layer_1/modulate = Color(1, 1, 1, 1)
@@ -1211,21 +1226,98 @@ layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array()
 
+[node name="Gems" type="Node2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="Gem" parent="Gems" instance=ExtResource("9_xi2ng")]
+position = Vector2(408, 319.5)
+
+[node name="Gem2" parent="Gems" instance=ExtResource("9_xi2ng")]
+position = Vector2(648, 223.5)
+
+[node name="Gem3" parent="Gems" instance=ExtResource("9_xi2ng")]
+position = Vector2(1240, 175)
+
+[node name="Gem4" parent="Gems" instance=ExtResource("9_xi2ng")]
+position = Vector2(1096, 495.5)
+
+[node name="Gem7" parent="Gems" instance=ExtResource("9_xi2ng")]
+position = Vector2(1128, 495.5)
+
+[node name="Gem10" parent="Gems" instance=ExtResource("9_xi2ng")]
+position = Vector2(1160, 495.5)
+
+[node name="Gem5" parent="Gems" instance=ExtResource("9_xi2ng")]
+position = Vector2(1656, 159.5)
+
+[node name="Gem8" parent="Gems" instance=ExtResource("9_xi2ng")]
+position = Vector2(1880, 207.5)
+
+[node name="Gem9" parent="Gems" instance=ExtResource("9_xi2ng")]
+position = Vector2(1952.5, 127.5)
+
+[node name="Gem6" parent="Gems" instance=ExtResource("9_xi2ng")]
+position = Vector2(1379, 349)
+
+[node name="DeathBoxes" type="Node2D" parent="."]
+
+[node name="DieBox" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+position = Vector2(522, 1165)
+
+[node name="DieBox2" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+position = Vector2(-562, 1165)
+
+[node name="DieBox3" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+position = Vector2(1606, 1165)
+
+[node name="DieBox4" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+position = Vector2(2690, 1165)
+
+[node name="DieBox5" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+position = Vector2(3774, 1165)
+
+[node name="DieBox6" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+position = Vector2(4858, 1165)
+
 [node name="Character" parent="." instance=ExtResource("8_50uxe")]
-position = Vector2(395, 65)
+position = Vector2(411, 63)
 
 [node name="Camera2D" type="Camera2D" parent="Character"]
 
-[node name="UI" parent="Character/Camera2D" instance=ExtResource("9_l03xi")]
-offset_left = -268.5
-offset_top = -150.0
-offset_right = -268.5
-offset_bottom = -150.0
-scale = Vector2(0.75, 0.75)
+[node name="UI" type="Node2D" parent="Character/Camera2D"]
+scale = Vector2(0.5, 0.5)
 
-[node name="Label" type="Label" parent="Character/Camera2D"]
-offset_left = 239.5
-offset_top = -162.0
-offset_right = 285.5
-offset_bottom = -136.0
-text = "00000"
+[node name="UI" parent="Character/Camera2D/UI" instance=ExtResource("9_l03xi")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -546.0
+offset_top = -304.0
+offset_right = -546.0
+offset_bottom = -304.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[connection signal="gem_collected" from="Gems/Gem" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
+[connection signal="gem_collected" from="Gems/Gem2" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
+[connection signal="gem_collected" from="Gems/Gem3" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
+[connection signal="gem_collected" from="Gems/Gem4" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
+[connection signal="gem_collected" from="Gems/Gem7" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
+[connection signal="gem_collected" from="Gems/Gem10" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
+[connection signal="gem_collected" from="Gems/Gem5" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
+[connection signal="gem_collected" from="Gems/Gem8" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
+[connection signal="gem_collected" from="Gems/Gem9" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
+[connection signal="gem_collected" from="Gems/Gem6" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox" to="Character" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox2" to="Character" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox2" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox3" to="Character" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox3" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox4" to="Character" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox4" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox5" to="Character" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox5" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox6" to="Character" method="_on_die_box_player_entered" flags=18]
+[connection signal="player_entered" from="DeathBoxes/DieBox6" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
+[connection signal="respawn_gems" from="Character" to="Gems/Gem" method="_on_character_respawn_gems" flags=18]
