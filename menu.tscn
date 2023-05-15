@@ -1242,6 +1242,16 @@ theme_override_font_sizes/font_size = 25
 text = "Vehd Reddy"
 horizontal_alignment = 1
 
+[node name="Label7" type="Label" parent="ParallaxBackground/GameText"]
+offset_left = 220.0
+offset_top = 727.0
+offset_right = 595.0
+offset_bottom = 785.0
+theme_override_fonts/font = ExtResource("7_8ylh3")
+theme_override_font_sizes/font_size = 25
+text = "W/A/S/D or Arrow Keys to move"
+horizontal_alignment = 1
+
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
 scale = Vector2(2, 2)
@@ -1262,15 +1272,13 @@ position = Vector2(395, 65)
 
 [node name="Camera2D" type="Camera2D" parent="Character"]
 
+[node name="Teleporter2" parent="." instance=ExtResource("11_uc56i")]
+position = Vector2(722, 632)
+
+[node name="Teleporter3" parent="." instance=ExtResource("12_74uwb")]
+position = Vector2(174, 568)
+
 [node name="Teleporter" parent="." instance=ExtResource("10_60x0i")]
-position = Vector2(625, 475)
-
-[node name="Teleporter" parent="Teleporter" instance=ExtResource("11_uc56i")]
-position = Vector2(47, 79)
-scale = Vector2(1, 1)
-
-[node name="Teleporter" parent="Teleporter/Teleporter" instance=ExtResource("12_74uwb")]
-position = Vector2(-273.5, -29.5)
-scale = Vector2(1, 1)
+position = Vector2(622, 472)
 
 [connection signal="body_entered" from="Teleporter" to="Character" method="_on_teleporter_body_entered"]
