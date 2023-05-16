@@ -10,3 +10,9 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+	
+
+func _on_character_death():
+	lives = lives - 1
+	if lives <= 0:
+		get_tree().change_scene_to_file("res://menu.tscn")

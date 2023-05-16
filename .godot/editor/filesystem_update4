@@ -15,3 +15,6 @@ res://character.tscn
 res://ui.tscn
 res://lives.tscn
 res://lives.gd
+res://ui.gd
+res://gem.gd
+res://gem.tscn

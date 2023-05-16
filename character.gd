@@ -4,7 +4,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -430.0
 var start_pos = Vector2(411, 63)
-signal respawn_gems
+signal death
 var num_jumps = 0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -53,7 +53,10 @@ func _physics_process(delta):
 	
 
 func _on_die_box_player_entered():
-	get_tree().reload_current_scene()
+	emit_signal("death")
+	self.position = start_pos
+	velocity = Vector2(0, 0)
+	
 
 
 func _on_teleporter_body_entered(body):

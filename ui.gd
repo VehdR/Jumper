@@ -9,7 +9,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	$Label.text = "x" + str(gems_collected)
 
 func _on_gem_gem_collected():
 	gems_collected += 1
@@ -17,3 +17,9 @@ func _on_gem_gem_collected():
 	
 	if gems_collected == 10:
 		emit_signal("all_gems_collected")
+
+func _on_character_death():
+	print("joe")
+	gems_collected = 0
+	$Label.text = "x" + str(gems_collected)
+	
