@@ -16,3 +16,8 @@ func _on_character_death():
 	lives = lives - 1
 	if lives <= 0:
 		get_tree().change_scene_to_file("res://menu.tscn")
+	elif lives == 1:
+		$Heart2.visible = false
+		$Heart3.visible = false
+	elif lives == 2:
+		$Heart3.visible = false
