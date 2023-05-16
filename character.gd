@@ -56,6 +56,7 @@ func _on_die_box_player_entered():
 	emit_signal("death")
 	self.position = start_pos
 	velocity = Vector2(0, 0)
+	$AnimatedSprite2D.play("idle")
 	
 
 

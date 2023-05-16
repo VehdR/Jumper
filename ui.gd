@@ -19,7 +19,6 @@ func _on_gem_gem_collected():
 		emit_signal("all_gems_collected")
 
 func _on_character_death():
-	print("joe")
 	gems_collected = 0
 	$Label.text = "x" + str(gems_collected)
 	

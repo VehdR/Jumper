@@ -36,3 +36,8 @@ func _on_timer_check_toggle_timer():
 
 func _on_ui_all_gems_collected():
 	all_gems = true
+
+
+func _on_character_death():
+	timer_on = false
+	timer = 0

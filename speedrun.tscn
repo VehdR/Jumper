@@ -1244,7 +1244,7 @@ scale = Vector2(2, 2)
 position = Vector2(408, 319.5)
 
 [node name="Gem2" parent="Gems" instance=ExtResource("8_mxclg")]
-position = Vector2(651.5, 222)
+position = Vector2(648.5, 223.5)
 
 [node name="Gem3" parent="Gems" instance=ExtResource("8_mxclg")]
 position = Vector2(1240, 175)
@@ -1349,4 +1349,15 @@ grow_vertical = 1
 [connection signal="player_entered" from="DeathBoxes/DieBox6" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered"]
 [connection signal="toggle_timer" from="TimerBoxes/TimerCheck" to="Character/Camera2D/UI/Timer" method="_on_timer_check_toggle_timer"]
 [connection signal="death" from="Character" to="Gems/Gem" method="_on_character_death"]
+[connection signal="death" from="Character" to="Gems/Gem2" method="_on_character_death"]
+[connection signal="death" from="Character" to="Gems/Gem3" method="_on_character_death"]
+[connection signal="death" from="Character" to="Gems/Gem4" method="_on_character_death"]
+[connection signal="death" from="Character" to="Gems/Gem7" method="_on_character_death"]
+[connection signal="death" from="Character" to="Gems/Gem10" method="_on_character_death"]
+[connection signal="death" from="Character" to="Gems/Gem5" method="_on_character_death"]
+[connection signal="death" from="Character" to="Gems/Gem8" method="_on_character_death"]
+[connection signal="death" from="Character" to="Gems/Gem9" method="_on_character_death"]
+[connection signal="death" from="Character" to="Gems/Gem6" method="_on_character_death"]
+[connection signal="death" from="Character" to="Character/Camera2D/UI/Timer" method="_on_character_death"]
+[connection signal="death" from="Character" to="Character/Camera2D/UI/UI" method="_on_character_death"]
 [connection signal="all_gems_collected" from="Character/Camera2D/UI/UI" to="Character/Camera2D/UI/Timer" method="_on_ui_all_gems_collected"]
