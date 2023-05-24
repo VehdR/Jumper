@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dv3ntyort2jc4"]
+[gd_scene load_steps=17 format=3 uid="uid://dv3ntyort2jc4"]
 
 [ext_resource type="Texture2D" uid="uid://ccdu2v5xxap8r" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/sky.png" id="1_xax2m"]
 [ext_resource type="Texture2D" uid="uid://couuk22drpblb" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/clouds.png" id="2_apky6"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bqq65ldsrawvj" path="res://gem.tscn" id="9_xi2ng"]
 [ext_resource type="PackedScene" uid="uid://bys4ekolxxo2g" path="res://die_box.tscn" id="10_pkoro"]
 [ext_resource type="PackedScene" uid="uid://ddwsg1f25b8qa" path="res://lives.tscn" id="12_jcces"]
+[ext_resource type="PackedScene" uid="uid://coorxaj8dolav" path="res://score.tscn" id="13_shqx6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m13v0"]
 texture = ExtResource("7_8hjpc")
@@ -1189,7 +1190,7 @@ scale = Vector2(3.38333, 3.38333)
 texture = ExtResource("5_5f2v0")
 
 [node name="Frontbottom" type="Sprite2D" parent="ParallaxBackground/Front"]
-position = Vector2(521, 1357.81)
+position = Vector2(522, 1357.81)
 scale = Vector2(3.383, 80.1582)
 texture = ExtResource("6_8p358")
 
@@ -1290,11 +1291,17 @@ position = Vector2(411, 63)
 scale = Vector2(0.5, 0.5)
 
 [node name="Lives" parent="Character/Camera2D/UI" instance=ExtResource("12_jcces")]
-offset_left = -547.0
-offset_top = -252.0
-offset_right = -547.0
-offset_bottom = -252.0
-scale = Vector2(0.08, 0.08)
+offset_left = -548.0
+offset_top = -255.0
+offset_right = -548.0
+offset_bottom = -255.0
+scale = Vector2(0.07, 0.07)
+
+[node name="Score" parent="Character/Camera2D/UI" instance=ExtResource("13_shqx6")]
+offset_left = 567.0
+offset_top = -316.0
+offset_right = 567.0
+offset_bottom = -316.0
 
 [node name="UI" parent="Character/Camera2D/UI" instance=ExtResource("9_l03xi")]
 anchors_preset = 0
@@ -1331,3 +1338,4 @@ grow_vertical = 1
 [connection signal="player_entered" from="DeathBoxes/DieBox6" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
 [connection signal="death" from="Character" to="Character/Camera2D/UI/Lives" method="_on_character_death"]
 [connection signal="death" from="Character" to="Character/Camera2D/UI/UI" method="_on_character_death"]
+[connection signal="gem_score" from="Character/Camera2D/UI/UI" to="Character/Camera2D/UI/Score" method="_on_ui_gem_score"]

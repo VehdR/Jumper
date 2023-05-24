@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://coorxaj8dolav"]
+
+[ext_resource type="Script" path="res://score.gd" id="1_35y1n"]
+[ext_resource type="FontFile" uid="uid://ntnbqwobfhc4" path="res://Pixellari.ttf" id="1_kbxsg"]
+
+[node name="Score" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_35y1n")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -17.0
+offset_bottom = 34.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_kbxsg")
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 2
