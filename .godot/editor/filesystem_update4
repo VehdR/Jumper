@@ -9,3 +9,5 @@ res://timer.tscn
 res://skeleton.tscn
 res://skeleton.gd
 res://bounce_block.tscn
+res://character.gd
+res://character.tscn

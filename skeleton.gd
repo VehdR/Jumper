@@ -13,6 +13,7 @@ var curstate = State.WALK_RIGHT
 var state_time = 0.0
 var HEALTH = 1
 var hits = 0
+signal skeleton_attack
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -47,7 +48,10 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_area_2d_area_entered(area):
-	if curstate == State.WALK_RIGHT:
-		switch_to(State.WALK_LEFT)
+	if area.is_in_group("GuardRails"):
+		if curstate == State.WALK_RIGHT:
+			switch_to(State.WALK_LEFT)
+		else:
+			switch_to(State.WALK_RIGHT)
 	else:
-		switch_to(State.WALK_RIGHT)
+		emit_signal("skeleton_attack")
