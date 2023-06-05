@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dv3ntyort2jc4"]
+[gd_scene load_steps=19 format=3 uid="uid://dv3ntyort2jc4"]
 
 [ext_resource type="Texture2D" uid="uid://ccdu2v5xxap8r" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/sky.png" id="1_xax2m"]
 [ext_resource type="Texture2D" uid="uid://couuk22drpblb" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/clouds.png" id="2_apky6"]
@@ -14,6 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://bys4ekolxxo2g" path="res://die_box.tscn" id="10_pkoro"]
 [ext_resource type="PackedScene" uid="uid://ddwsg1f25b8qa" path="res://lives.tscn" id="12_jcces"]
 [ext_resource type="PackedScene" uid="uid://coorxaj8dolav" path="res://score.tscn" id="13_shqx6"]
+[ext_resource type="PackedScene" uid="uid://blty8btsbf0pn" path="res://skeleton.tscn" id="15_0xkpf"]
+[ext_resource type="PackedScene" uid="uid://cl3ati43vcd14" path="res://bounce_block.tscn" id="16_jy25y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m13v0"]
 texture = ExtResource("7_8hjpc")
@@ -1054,7 +1056,7 @@ texture = ExtResource("7_8hjpc")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_m13v0")
 
-[node name="SpeedRun" type="Node2D"]
+[node name="Quest 1" type="Node2D"]
 texture_filter = 1
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -1313,6 +1315,14 @@ offset_right = -546.0
 offset_bottom = -304.0
 grow_horizontal = 1
 grow_vertical = 1
+
+[node name="Skeleton" parent="." instance=ExtResource("15_0xkpf")]
+position = Vector2(1774, 916)
+
+[node name="GuardRails" type="Node2D" parent="."]
+
+[node name="BounceBlock" parent="GuardRails" instance=ExtResource("16_jy25y")]
+position = Vector2(1686, 923)
 
 [connection signal="gem_collected" from="Gems/Gem" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
 [connection signal="gem_collected" from="Gems/Gem2" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]

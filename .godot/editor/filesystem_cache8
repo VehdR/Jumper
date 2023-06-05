@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1684949564
+::res://::1686004461
 character.gd::GDScript::-1::1684210694::0::1::::<>CharacterBody2D<>::
 character.tscn::PackedScene::609742665396971788::1684170266::0::1::::<><>::res://character.gd<>uid://bmp7tgjbaw8lk
 checkpoint.tscn::PackedScene::2373577572317099491::1682441978::0::1::::<><>::uid://cr1o11gsjfn44<>res://teleporter.gd
@@ -7,36 +7,39 @@ die_box.gd::GDScript::-1::1682441978::0::1::::<>Area2D<>::
 die_box.tscn::PackedScene::4109880213937011036::1682441978::0::1::::<><>::uid://bn2n8b06tf1p2<>res://die_box.gd
 export_presets.cfg::TextFile::-1::1682441978::0::1::::<><>::
 gem.gd::GDScript::-1::1684210527::0::1::::<>Area2D<>::
-gem.tscn::PackedScene::3544408609791329211::1684787975::0::1::::<><>::res://gem.gd<>uid://b2lao2oxsulfk
+gem.tscn::PackedScene::3544408609791329211::1685753393::0::1::::<><>::res://gem.gd<>uid://b2lao2oxsulfk
 heart.png::CompressedTexture2D::5420040106917686714::1684170991::1684170999::1::::<><>::
 icon.svg::CompressedTexture2D::8257243341027156599::1682441978::1682441978::1::::<><>::
 lives.gd::GDScript::-1::1684265427::0::1::::<>Control<>::
-lives.tscn::PackedScene::7416349887813991468::1684787974::0::1::::<><>::uid://cjhrjeuk8q0w1<>res://lives.gd
-menu.tscn::PackedScene::2897012351772145526::1684787974::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://couuk22drpblb<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://ntnbqwobfhc4<>uid://ixmmw0ii76j5<>uid://xm3noqv7558j<>uid://dupm2uu4c16md<>uid://c3uclyq7ieb2s<>uid://c20xvmlpetex6
+lives.tscn::PackedScene::7416349887813991468::1685753393::0::1::::<><>::uid://cjhrjeuk8q0w1<>res://lives.gd
+menu.tscn::PackedScene::2897012351772145526::1685753393::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://couuk22drpblb<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://ntnbqwobfhc4<>uid://ixmmw0ii76j5<>uid://xm3noqv7558j<>uid://dupm2uu4c16md<>uid://c3uclyq7ieb2s<>uid://c20xvmlpetex6
 Pixellari.ttf::FontFile::952470126318362101::1682441978::1682441978::1::::<><>::
-quest_1.tscn::PackedScene::8691854878568343597::1684787974::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://couuk22drpblb<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://xm3noqv7558j<>uid://ntnbqwobfhc4<>uid://ixmmw0ii76j5<>uid://bq388t0yhe512<>uid://bqq65ldsrawvj<>uid://bys4ekolxxo2g<>uid://ddwsg1f25b8qa<>uid://coorxaj8dolav
+quest_1.tscn::PackedScene::8691854878568343597::1685753393::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://couuk22drpblb<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://xm3noqv7558j<>uid://ntnbqwobfhc4<>uid://ixmmw0ii76j5<>uid://bq388t0yhe512<>uid://bqq65ldsrawvj<>uid://bys4ekolxxo2g<>uid://ddwsg1f25b8qa<>uid://coorxaj8dolav<>uid://blty8btsbf0pn
 quest_teleporter.gd::GDScript::-1::1684169090::0::1::::<>Area2D<>::
 quest_teleporter.tscn::PackedScene::6720984229930881589::1684170266::0::1::::<><>::uid://dupm2uu4c16md<>res://quest_teleporter.gd
 README.md::TextFile::-1::1683229278::0::1::::<><>::
 score.gd::GDScript::-1::1684786596::0::1::::<>Control<>::
-score.tscn::PackedScene::5785459744419515585::1684787975::0::1::::<><>::res://score.gd<>uid://ntnbqwobfhc4
-skeleton.tscn::PackedScene::3199237362757883687::1684797779::0::1::::<><>::
+score.tscn::PackedScene::5785459744419515585::1685753393::0::1::::<><>::res://score.gd<>uid://ntnbqwobfhc4
+skeleton.gd::GDScript::-1::1685478001::0::1::::<>CharacterBody2D<>::
+skeleton.png::CompressedTexture2D::8366779740755345232::1685476879::1685476919::1::::<><>::
+skeleton.tscn::PackedScene::3199237362757883687::1685906071::0::1::::<><>::res://skeleton.gd<>uid://drg6v000ngkjw
+skeleton_animations.tres::SpriteFrames::486203564941962847::1684972984::0::1::::<><>::uid://d4flg271ti60
 speedrun.gd::GDScript::-1::1684170000::0::1::::<>Node2D<>::
-speedrun.tscn::PackedScene::2957707600370603979::1684787975::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://xm3noqv7558j<>uid://couuk22drpblb<>uid://ixmmw0ii76j5<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://bys4ekolxxo2g<>uid://ntnbqwobfhc4<>uid://bqq65ldsrawvj<>uid://bumxfdkdo5fm<>uid://bq388t0yhe512<>uid://uuo1gottmtwd
+speedrun.tscn::PackedScene::2957707600370603979::1685753393::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://xm3noqv7558j<>uid://couuk22drpblb<>uid://ixmmw0ii76j5<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://bys4ekolxxo2g<>uid://ntnbqwobfhc4<>uid://bqq65ldsrawvj<>uid://bumxfdkdo5fm<>uid://bq388t0yhe512<>uid://uuo1gottmtwd
 speedrun_teleporter.gd::GDScript::-1::1684168788::0::1::::<>Area2D<>::
 speedrun_teleporter.tscn::PackedScene::8594782493183926567::1684170266::0::1::::<><>::uid://dtckbfoxfi76k<>res://speedrun_teleporter.gd
 sun.png::CompressedTexture2D::5807141389820707835::1683918446::1683918435::1::::<><>::
 teleporter.gd::GDScript::-1::1684167498::0::1::::<>Area2D<>::
 teleporter.tscn::PackedScene::8497588076727669016::1684168133::0::1::::<><>::uid://co0a1gofk3xlj
 timer.gd::GDScript::-1::1684210666::0::1::::<>Control<>::
-timer.tscn::PackedScene::112246343602350414::1684787975::0::1::::<><>::res://timer.gd<>uid://ntnbqwobfhc4
+timer.tscn::PackedScene::112246343602350414::1685753393::0::1::::<><>::res://timer.gd<>uid://ntnbqwobfhc4
 timer_check.gd::GDScript::-1::1682441978::0::1::::<>Area2D<>::
 timer_check.tscn::PackedScene::1445961234038621483::1682441978::0::1::::<><>::res://timer_check.gd
 tutorial.tscn::PackedScene::8720980704346179210::1684170266::0::1::::<><>::uid://ccdu2v5xxap8r<>uid://xm3noqv7558j<>uid://couuk22drpblb<>uid://ixmmw0ii76j5<>uid://ju6fyy5r32wx<>uid://dmj6sokkeuday<>uid://snw5feha5gjv<>uid://bn2n8b06tf1p2<>uid://bys4ekolxxo2g<>uid://ntnbqwobfhc4<>uid://bqq65ldsrawvj<>uid://bq388t0yhe512<>uid://uuo1gottmtwd
 tutorial_teleporter.gd::GDScript::-1::1684168824::0::1::::<>Area2D<>::
 tutorial_teleporter.tscn::PackedScene::6779558908792848844::1684170266::0::1::::<><>::uid://dupm2uu4c16md<>res://tutorial_teleporter.gd
 ui.gd::GDScript::-1::1684433618::0::1::::<>Control<>::
-ui.tscn::PackedScene::3569308388639208279::1684787974::0::1::::<><>::res://ui.gd<>uid://b2lao2oxsulfk<>uid://ntnbqwobfhc4
+ui.tscn::PackedScene::3569308388639208279::1685753393::0::1::::<><>::res://ui.gd<>uid://b2lao2oxsulfk<>uid://ntnbqwobfhc4
 ::res://Asset Packs for HW2/::1683229541
 ::res://Asset Packs for HW2/Mountain Dusk Add-on/::1683229540
 ::res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/::1683229540
