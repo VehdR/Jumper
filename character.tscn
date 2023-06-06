@@ -220,8 +220,8 @@ script = ExtResource("1_c83bs")
 sprite_frames = SubResource("SpriteFrames_4xpr3")
 animation = &"attack"
 autoplay = "idle"
-frame = 3
-frame_progress = 0.318518
+frame = 5
+frame_progress = 1.0
 
 [node name="EnemyCollider" type="Area2D" parent="."]
 
@@ -232,7 +232,9 @@ shape = SubResource("RectangleShape2D_jk65w")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-5, 17.3333, 6, 17.3333, 4, -11.3333, -4, -11.6667)
 
-[node name="SwordHitBox" type="CollisionPolygon2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="SwordHitBox" type="CollisionPolygon2D" parent="Area2D"]
 polygon = PackedVector2Array(4, -11.5, 4, -10.5, 9, -7.5, 13, -2.5, 12, 4.5, 8, 9.5, -6, 7.5, -8, 7.5, -14, 13.5, -14, 15.5, -1, 17.5, 10, 17.5, 15, 15.5, 21, 9.5, 22, 6.5, 22, -1.5, 21, -4.5, 15, -10.5, 12, -11.5)
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

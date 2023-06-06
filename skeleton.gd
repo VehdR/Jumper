@@ -51,7 +51,6 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_area_2d_area_entered(area):
-	print("test")
 	if area.is_in_group("GuardRails"):
 		if curstate == State.WALK_RIGHT:
 			switch_to(State.WALK_LEFT)
