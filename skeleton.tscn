@@ -153,8 +153,7 @@ polygon = PackedVector2Array(-3, 6, -6, 9, -6, 16, -7, 16, -7, 19, -6, 19, -6, 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_gkq0v")
-animation = &"idle"
-frame_progress = 0.735228
+animation = &"die"
 
 [node name="Area2D" type="Area2D" parent="."]
 

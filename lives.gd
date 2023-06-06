@@ -1,6 +1,7 @@
 extends Control
 
 var lives = 3
+signal player_died
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,7 +16,7 @@ func _process(delta):
 func _on_character_death():
 	lives = lives - 1
 	if lives <= 0:
-		get_tree().change_scene_to_file("res://menu.tscn")
+		get_tree().change_scene_to_file("res://game_over.tscn")
 	elif lives == 1:
 		$Heart2.visible = false
 		$Heart3.visible = false

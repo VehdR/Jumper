@@ -56,7 +56,7 @@ func _physics_process(delta):
 	if attacking:
 		attack_timer += delta
 		
-		if attack_timer >= 0.5:
+		if attack_timer >= 0.6:
 			$Sword/SwordHitBox.disabled = true
 			attacking = false
 			attack_timer = 0

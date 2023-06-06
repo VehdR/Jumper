@@ -49,6 +49,9 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 		
+	if curstate == State.DYING and state_time >= 1:
+		queue_free()
+		
 	move_and_slide()
 
 func _on_area_2d_area_entered(area):
@@ -63,4 +66,4 @@ func _on_area_2d_area_entered(area):
 
 func _on_character_kill_mob():
 	emit_signal("skeleton_score")
-	queue_free()
+	switch_to(State.DYING)
