@@ -1321,7 +1321,7 @@ position = Vector2(1774, 916)
 
 [node name="GuardRails" type="Node2D" parent="."]
 
-[node name="BounceBlock" parent="GuardRails" instance=ExtResource("16_jy25y")]
+[node name="BounceBlock" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
 position = Vector2(1686, 923)
 
 [connection signal="gem_collected" from="Gems/Gem" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
@@ -1349,3 +1349,4 @@ position = Vector2(1686, 923)
 [connection signal="death" from="Character" to="Character/Camera2D/UI/Lives" method="_on_character_death"]
 [connection signal="death" from="Character" to="Character/Camera2D/UI/UI" method="_on_character_death"]
 [connection signal="gem_score" from="Character/Camera2D/UI/UI" to="Character/Camera2D/UI/Score" method="_on_ui_gem_score"]
+[connection signal="skeleton_attack" from="Skeleton" to="Character" method="_on_skeleton_skeleton_attack"]
