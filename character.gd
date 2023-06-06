@@ -62,5 +62,3 @@ func die():
 func _on_die_box_player_entered():
 	die()
 
-func _on_skeleton_player_attack():
-	die()

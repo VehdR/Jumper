@@ -1349,7 +1349,3 @@ position = Vector2(1686, 923)
 [connection signal="death" from="Character" to="Character/Camera2D/UI/Lives" method="_on_character_death"]
 [connection signal="death" from="Character" to="Character/Camera2D/UI/UI" method="_on_character_death"]
 [connection signal="gem_score" from="Character/Camera2D/UI/UI" to="Character/Camera2D/UI/Score" method="_on_ui_gem_score"]
-<<<<<<< HEAD
-[connection signal="player_attack" from="Enemies/Skeleton" to="Character" method="_on_skeleton_player_attack"]
-=======
->>>>>>> parent of 256d626 (Added player death to the skeleton)

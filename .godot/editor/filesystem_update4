@@ -1,13 +1,12 @@
-res://menu.tscn
-res://quest_1.tscn
+res://character.tscn
+res://character.gd
 res://ui.tscn
+res://menu.tscn
 res://lives.tscn
 res://speedrun.tscn
 res://gem.tscn
 res://score.tscn
 res://timer.tscn
 res://skeleton.tscn
-res://skeleton.gd
 res://bounce_block.tscn
-res://character.gd
-res://character.tscn
+res://quest_1.tscn
