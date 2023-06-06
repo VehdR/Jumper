@@ -16,3 +16,10 @@ res://game_over.tscn
 res://lives.gd
 res://game_over.gd
 res://global.gd
+res://quest_2_teleporter.tscn
+res://quest_2_teleporter.gd
+res://quest_2.tscn
+res://quest_3.tscn
+res://speedrun_teleporter.tscn
+res://quest_3_teleporter.tscn
+res://quest_3_teleporter.gd

@@ -1,24 +1,24 @@
-[gd_scene load_steps=18 format=3 uid="uid://dv3ntyort2jc4"]
+[gd_scene load_steps=18 format=3 uid="uid://cpq21gj5l2cyc"]
 
-[ext_resource type="Texture2D" uid="uid://ccdu2v5xxap8r" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/sky.png" id="1_xax2m"]
-[ext_resource type="Texture2D" uid="uid://couuk22drpblb" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/clouds.png" id="2_apky6"]
-[ext_resource type="Texture2D" uid="uid://ju6fyy5r32wx" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/far-mountains.png" id="3_nudvj"]
-[ext_resource type="Texture2D" uid="uid://dmj6sokkeuday" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/canyon.png" id="4_ajltc"]
-[ext_resource type="Texture2D" uid="uid://snw5feha5gjv" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/front.png" id="5_5f2v0"]
-[ext_resource type="Texture2D" uid="uid://bn2n8b06tf1p2" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/frontbottom.png" id="6_8p358"]
-[ext_resource type="FontFile" uid="uid://ntnbqwobfhc4" path="res://Pixellari.ttf" id="7_m0056"]
-[ext_resource type="PackedScene" uid="uid://ixmmw0ii76j5" path="res://character.tscn" id="8_50uxe"]
-[ext_resource type="TileSet" uid="uid://dsqbml1ey4f6x" path="res://tileset.tres" id="8_gxsos"]
-[ext_resource type="PackedScene" uid="uid://bq388t0yhe512" path="res://ui.tscn" id="9_l03xi"]
-[ext_resource type="PackedScene" uid="uid://bqq65ldsrawvj" path="res://gem.tscn" id="9_xi2ng"]
-[ext_resource type="PackedScene" uid="uid://bys4ekolxxo2g" path="res://die_box.tscn" id="10_pkoro"]
-[ext_resource type="PackedScene" uid="uid://ddwsg1f25b8qa" path="res://lives.tscn" id="12_jcces"]
-[ext_resource type="PackedScene" uid="uid://coorxaj8dolav" path="res://score.tscn" id="13_shqx6"]
-[ext_resource type="PackedScene" uid="uid://blty8btsbf0pn" path="res://skeleton.tscn" id="15_0xkpf"]
-[ext_resource type="PackedScene" uid="uid://cl3ati43vcd14" path="res://bounce_block.tscn" id="16_jy25y"]
-[ext_resource type="PackedScene" uid="uid://m7so1v8324nn" path="res://quest_2_teleporter.tscn" id="17_5fpoj"]
+[ext_resource type="Texture2D" uid="uid://ccdu2v5xxap8r" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/sky.png" id="1_1jrky"]
+[ext_resource type="Texture2D" uid="uid://couuk22drpblb" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/clouds.png" id="2_a0od6"]
+[ext_resource type="Texture2D" uid="uid://ju6fyy5r32wx" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/far-mountains.png" id="3_heien"]
+[ext_resource type="Texture2D" uid="uid://dmj6sokkeuday" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/canyon.png" id="4_rf81e"]
+[ext_resource type="Texture2D" uid="uid://snw5feha5gjv" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/front.png" id="5_yvd16"]
+[ext_resource type="Texture2D" uid="uid://bn2n8b06tf1p2" path="res://Asset Packs for HW2/Mountain Dusk Add-on/Mountain Dusk Add-on/layers/one/frontbottom.png" id="6_2e56k"]
+[ext_resource type="FontFile" uid="uid://ntnbqwobfhc4" path="res://Pixellari.ttf" id="7_dxy5g"]
+[ext_resource type="TileSet" uid="uid://dsqbml1ey4f6x" path="res://tileset.tres" id="8_hw8r4"]
+[ext_resource type="PackedScene" uid="uid://bqq65ldsrawvj" path="res://gem.tscn" id="9_ooh1t"]
+[ext_resource type="PackedScene" uid="uid://bys4ekolxxo2g" path="res://die_box.tscn" id="10_pfdce"]
+[ext_resource type="PackedScene" uid="uid://ixmmw0ii76j5" path="res://character.tscn" id="11_c50cj"]
+[ext_resource type="PackedScene" uid="uid://ddwsg1f25b8qa" path="res://lives.tscn" id="12_1bkg6"]
+[ext_resource type="PackedScene" uid="uid://coorxaj8dolav" path="res://score.tscn" id="13_4sobe"]
+[ext_resource type="PackedScene" uid="uid://bq388t0yhe512" path="res://ui.tscn" id="14_ljsg7"]
+[ext_resource type="PackedScene" uid="uid://blty8btsbf0pn" path="res://skeleton.tscn" id="15_axhrg"]
+[ext_resource type="PackedScene" uid="uid://cl3ati43vcd14" path="res://bounce_block.tscn" id="16_rs5h2"]
+[ext_resource type="PackedScene" uid="uid://da51nit6rglhv" path="res://quest_3_teleporter.tscn" id="17_xqxla"]
 
-[node name="Quest 1" type="Node2D"]
+[node name="Quest 2" type="Node2D"]
 texture_filter = 1
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -31,66 +31,66 @@ motion_mirroring = Vector2(1188, 0)
 [node name="Sky" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 
 [node name="Sky2" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 offset = Vector2(32, 0)
 
 [node name="Sky3" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 offset = Vector2(64, 0)
 
 [node name="Sky4" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 offset = Vector2(96, 0)
 
 [node name="Sky5" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 offset = Vector2(128, 0)
 
 [node name="Sky6" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 offset = Vector2(160, 0)
 
 [node name="Sky7" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 offset = Vector2(192, 0)
 
 [node name="Sky8" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 offset = Vector2(224, 0)
 
 [node name="Sky9" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 offset = Vector2(256, 0)
 
 [node name="Sky10" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 offset = Vector2(288, 0)
 
 [node name="Sky11" type="Sprite2D" parent="ParallaxBackground/Sky"]
 position = Vector2(35, 351)
 scale = Vector2(3.375, 3.38333)
-texture = ExtResource("1_xax2m")
+texture = ExtResource("1_1jrky")
 offset = Vector2(320, 0)
 
 [node name="Clouds" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -101,12 +101,12 @@ motion_mirroring = Vector2(2127, 0)
 [node name="Clouds" type="Sprite2D" parent="ParallaxBackground/Clouds"]
 position = Vector2(518.333, 349.25)
 scale = Vector2(3.33958, 3.33958)
-texture = ExtResource("2_apky6")
+texture = ExtResource("2_a0od6")
 
 [node name="Clouds2" type="Sprite2D" parent="ParallaxBackground/Clouds"]
 position = Vector2(1575, 349.25)
 scale = Vector2(3.33958, 3.33958)
-texture = ExtResource("2_apky6")
+texture = ExtResource("2_a0od6")
 
 [node name="Far Mountains" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
@@ -116,12 +116,12 @@ motion_mirroring = Vector2(1408, 0)
 [node name="Far Mountains" type="Sprite2D" parent="ParallaxBackground/Far Mountains"]
 position = Vector2(332, 350.846)
 scale = Vector2(3.38462, 3.38462)
-texture = ExtResource("3_nudvj")
+texture = ExtResource("3_heien")
 
 [node name="Far Mountains2" type="Sprite2D" parent="ParallaxBackground/Far Mountains"]
 position = Vector2(1036, 350.846)
 scale = Vector2(3.38462, 3.38462)
-texture = ExtResource("3_nudvj")
+texture = ExtResource("3_heien")
 
 [node name="Canyon" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
@@ -131,12 +131,12 @@ motion_mirroring = Vector2(2170, 0)
 [node name="Canyon" type="Sprite2D" parent="ParallaxBackground/Canyon"]
 position = Vector2(522.667, 350)
 scale = Vector2(3.39167, 3.39167)
-texture = ExtResource("4_ajltc")
+texture = ExtResource("4_rf81e")
 
 [node name="Canyon2" type="Sprite2D" parent="ParallaxBackground/Canyon"]
 position = Vector2(1608, 350)
 scale = Vector2(3.39167, 3.39167)
-texture = ExtResource("4_ajltc")
+texture = ExtResource("4_rf81e")
 
 [node name="Front" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
@@ -146,22 +146,22 @@ motion_mirroring = Vector2(2164, 0)
 [node name="Front" type="Sprite2D" parent="ParallaxBackground/Front"]
 position = Vector2(521.333, 351)
 scale = Vector2(3.38333, 3.38333)
-texture = ExtResource("5_5f2v0")
+texture = ExtResource("5_yvd16")
 
 [node name="Front2" type="Sprite2D" parent="ParallaxBackground/Front"]
 position = Vector2(1604, 351)
 scale = Vector2(3.38333, 3.38333)
-texture = ExtResource("5_5f2v0")
+texture = ExtResource("5_yvd16")
 
 [node name="Frontbottom" type="Sprite2D" parent="ParallaxBackground/Front"]
 position = Vector2(522, 1357.81)
 scale = Vector2(3.383, 80.1582)
-texture = ExtResource("6_8p358")
+texture = ExtResource("6_2e56k")
 
 [node name="Frontbottom2" type="Sprite2D" parent="ParallaxBackground/Front"]
 position = Vector2(1604, 1357.81)
 scale = Vector2(3.383, 80.1582)
-texture = ExtResource("6_8p358")
+texture = ExtResource("6_2e56k")
 
 [node name="GameText" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
@@ -171,7 +171,7 @@ offset_left = 213.0
 offset_top = 495.0
 offset_right = 588.0
 offset_bottom = 553.0
-theme_override_fonts/font = ExtResource("7_m0056")
+theme_override_fonts/font = ExtResource("7_dxy5g")
 theme_override_font_sizes/font_size = 25
 text = "Explore the world, 
 defeat mobs, 
@@ -183,7 +183,7 @@ offset_left = 213.0
 offset_top = 718.0
 offset_right = 588.0
 offset_bottom = 805.0
-theme_override_fonts/font = ExtResource("7_m0056")
+theme_override_fonts/font = ExtResource("7_dxy5g")
 theme_override_font_sizes/font_size = 25
 text = "Press ESC to quit to the menu"
 horizontal_alignment = 1
@@ -191,7 +191,7 @@ horizontal_alignment = 1
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
 scale = Vector2(2, 2)
-tile_set = ExtResource("8_gxsos")
+tile_set = ExtResource("8_hw8r4")
 format = 2
 layer_0/name = "Platforms"
 layer_0/tile_data = PackedInt32Array(1376267, 1703936, 3, 1376268, 1769472, 3, 1376269, 1835008, 3, 1376280, 1703936, 3, 1376281, 1769472, 3, 1376282, 1835008, 3, 1966134, 1769472, 5, 1966135, 1769472, 5, 1966136, 1769472, 5, 1966137, 1769472, 5, 1966138, 1769472, 5, 1966139, 1769472, 5, 1966140, 1769472, 5, 1966141, 1769472, 5, 1966142, 1769472, 5, 1966143, 1769472, 5, 1966144, 1703936, 10, 1900608, 1638400, 6, 1900609, 1703936, 6, 1835073, 1703936, 5, 1835074, 1703936, 6, 1769538, 1703936, 5, 1769539, 1769472, 5, 1900611, 1900544, 8, 1966145, 1769472, 6, 1835076, 1769472, 9, 1835077, 1769472, 9, 1835078, 1769472, 9, 1835079, 1769472, 9, 1769540, 1769472, 5, 1769541, 1769472, 5, 1769542, 1769472, 5, 1769543, 1769472, 5, 2031680, 1703936, 11, 2097217, 1703936, 8, 2097219, 1769472, 5, 2097220, 1769472, 5, 2097221, 1769472, 5, 1769544, 1769472, 5, 1769545, 1769472, 5, 1769546, 1769472, 5, 1769547, 1769472, 5, 1966133, 1638400, 4, 2031669, 1638400, 5, 2031670, 1769472, 9, 2031671, 1769472, 9, 2031672, 1769472, 9, 2031673, 1769472, 9, 2031674, 1769472, 9, 2031675, 1769472, 9, 2031676, 1769472, 9, 2031677, 1769472, 9, 2031678, 1769472, 9, 2031679, 1769472, 9, 2097216, 1638400, 8, 2162753, 1703936, 9, 2162754, 1769472, 9, 2162755, 1769472, 9, 2162756, 1769472, 9, 2162757, 1769472, 9, 1835080, 1769472, 9, 1835081, 1769472, 9, 1835082, 1769472, 9, 1835083, 1769472, 9, 1769548, 1900544, 4, 1310731, 1900544, 1, 1900598, 1703936, 1, 1835062, 1703936, 0, 1704004, 1572864, 0, 1900604, 1572864, 1, 1900600, 1900544, 1, 1900601, 1835008, 1, 1835070, 1703936, 0, 1900606, 1703936, 1, 1638475, 1703936, 0, 1704011, 1703936, 1, 1704006, 1900544, 1, 1638473, 1966080, 0, 1704009, 1966080, 1, 1572946, 1638400, 7, 1507410, 1638400, 7, 1441874, 1638400, 7, 1376338, 1638400, 7, 1310802, 1638400, 7, 1245266, 1638400, 7, 1638482, 1703936, 9, 1638483, 1769472, 9, 1638484, 1835008, 9, 1572948, 1900544, 7, 1507412, 1900544, 7, 1441876, 1900544, 7, 1376340, 1900544, 7, 1310804, 1900544, 7, 1245268, 1900544, 7, 1179730, 1703936, 5, 1179731, 1769472, 5, 1179732, 1835008, 5, 1245267, 1769472, 7, 1310803, 1769472, 7, 1376339, 1769472, 7, 1441875, 1769472, 7, 1507411, 1769472, 7, 1572947, 1769472, 7, 1179726, 1900544, 7, 1114190, 1900544, 7, 1048654, 1900544, 7, 983118, 1900544, 7, 917582, 1900544, 7, 852046, 1900544, 7, 786510, 1835008, 5, 786509, 1769472, 5, 786508, 1703936, 5, 1245260, 1703936, 9, 1245261, 1769472, 9, 1245262, 1835008, 9, 852044, 1638400, 7, 917580, 1638400, 7, 983116, 1638400, 7, 1048652, 1638400, 7, 1114188, 1638400, 7, 1179724, 1638400, 7, 852045, 1769472, 7, 917581, 1769472, 7, 983117, 1769472, 7, 1048653, 1769472, 7, 1114189, 1769472, 7, 1179725, 1769472, 7, 1245202, 1966080, 3, 1179681, 1835008, 3, 1179680, 1769472, 3, 983081, 1835008, 3, 983080, 1769472, 3, 1179679, 1703936, 3, 983079, 1703936, 3, 1114145, 1835008, 1, 720980, 1703936, 3, 720981, 1769472, 3, 720982, 1835008, 3, 655444, 1572864, 1, 655446, 1769472, 1, 655445, 1900544, 1, 1441839, 1703936, 3, 1441840, 1769472, 3, 1441841, 1835008, 3, 720998, 1703936, 3, 720999, 1769472, 3, 721000, 1835008, 3, 1835084, 1900544, 5, 1835075, 1835008, 8, 2097218, 1835008, 6, 1966146, 1900544, 7, 1900610, 1835008, 8, 2031682, 1900544, 7, 2031681, 1769472, 7, 1966163, 1638400, 4, 2031699, 1638400, 5, 1966164, 1900544, 4, 2031700, 1900544, 5, 2097222, 1769472, 5, 2097223, 1769472, 5, 2097224, 1769472, 5, 2097225, 1900544, 4, 2162758, 1769472, 9, 2162759, 1769472, 9, 2162760, 1769472, 9, 2162761, 1900544, 5, 589945, 1638400, 4, 655481, 1638400, 7, 721017, 1638400, 7, 786553, 1638400, 7, 852089, 1638400, 7, 917625, 1703936, 10, 917624, 1769472, 5, 917623, 1769472, 5, 917622, 1769472, 5, 917621, 1769472, 5, 917620, 1769472, 5, 917619, 1638400, 4, 983155, 1638400, 5, 983156, 1769472, 9, 983157, 1769472, 9, 983158, 1769472, 9, 983159, 1769472, 9, 983160, 1769472, 9, 983161, 1769472, 9, 983162, 1835008, 9, 917626, 1900544, 7, 655482, 1900544, 7, 721018, 1900544, 7, 786554, 1900544, 7, 852090, 1900544, 7, 589946, 1900544, 4)
@@ -206,57 +206,57 @@ layer_1/tile_data = PackedInt32Array()
 [node name="Gems" type="Node2D" parent="."]
 scale = Vector2(2, 2)
 
-[node name="Gem" parent="Gems" instance=ExtResource("9_xi2ng")]
+[node name="Gem" parent="Gems" instance=ExtResource("9_ooh1t")]
 position = Vector2(408, 319.5)
 
-[node name="Gem2" parent="Gems" instance=ExtResource("9_xi2ng")]
+[node name="Gem2" parent="Gems" instance=ExtResource("9_ooh1t")]
 position = Vector2(648, 223.5)
 
-[node name="Gem3" parent="Gems" instance=ExtResource("9_xi2ng")]
+[node name="Gem3" parent="Gems" instance=ExtResource("9_ooh1t")]
 position = Vector2(1240, 175)
 
-[node name="Gem4" parent="Gems" instance=ExtResource("9_xi2ng")]
+[node name="Gem4" parent="Gems" instance=ExtResource("9_ooh1t")]
 position = Vector2(1096, 495.5)
 
-[node name="Gem7" parent="Gems" instance=ExtResource("9_xi2ng")]
+[node name="Gem7" parent="Gems" instance=ExtResource("9_ooh1t")]
 position = Vector2(1128, 495.5)
 
-[node name="Gem10" parent="Gems" instance=ExtResource("9_xi2ng")]
+[node name="Gem10" parent="Gems" instance=ExtResource("9_ooh1t")]
 position = Vector2(1160, 495.5)
 
-[node name="Gem5" parent="Gems" instance=ExtResource("9_xi2ng")]
+[node name="Gem5" parent="Gems" instance=ExtResource("9_ooh1t")]
 position = Vector2(1656, 159.5)
 
-[node name="Gem8" parent="Gems" instance=ExtResource("9_xi2ng")]
+[node name="Gem8" parent="Gems" instance=ExtResource("9_ooh1t")]
 position = Vector2(1880, 207.5)
 
-[node name="Gem9" parent="Gems" instance=ExtResource("9_xi2ng")]
+[node name="Gem9" parent="Gems" instance=ExtResource("9_ooh1t")]
 position = Vector2(1952.5, 127.5)
 
-[node name="Gem6" parent="Gems" instance=ExtResource("9_xi2ng")]
+[node name="Gem6" parent="Gems" instance=ExtResource("9_ooh1t")]
 position = Vector2(1379, 349)
 
 [node name="DeathBoxes" type="Node2D" parent="."]
 
-[node name="DieBox" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+[node name="DieBox" parent="DeathBoxes" instance=ExtResource("10_pfdce")]
 position = Vector2(522, 1165)
 
-[node name="DieBox2" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+[node name="DieBox2" parent="DeathBoxes" instance=ExtResource("10_pfdce")]
 position = Vector2(-562, 1165)
 
-[node name="DieBox3" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+[node name="DieBox3" parent="DeathBoxes" instance=ExtResource("10_pfdce")]
 position = Vector2(1606, 1165)
 
-[node name="DieBox4" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+[node name="DieBox4" parent="DeathBoxes" instance=ExtResource("10_pfdce")]
 position = Vector2(2690, 1165)
 
-[node name="DieBox5" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+[node name="DieBox5" parent="DeathBoxes" instance=ExtResource("10_pfdce")]
 position = Vector2(3774, 1165)
 
-[node name="DieBox6" parent="DeathBoxes" instance=ExtResource("10_pkoro")]
+[node name="DieBox6" parent="DeathBoxes" instance=ExtResource("10_pfdce")]
 position = Vector2(4858, 1165)
 
-[node name="Character" parent="." instance=ExtResource("8_50uxe")]
+[node name="Character" parent="." instance=ExtResource("11_c50cj")]
 position = Vector2(411, 63)
 
 [node name="Camera2D" type="Camera2D" parent="Character"]
@@ -264,20 +264,20 @@ position = Vector2(411, 63)
 [node name="UI" type="Node2D" parent="Character/Camera2D"]
 scale = Vector2(0.5, 0.5)
 
-[node name="Lives" parent="Character/Camera2D/UI" instance=ExtResource("12_jcces")]
+[node name="Lives" parent="Character/Camera2D/UI" instance=ExtResource("12_1bkg6")]
 offset_left = -548.0
 offset_top = -255.0
 offset_right = -548.0
 offset_bottom = -255.0
 scale = Vector2(0.07, 0.07)
 
-[node name="Score" parent="Character/Camera2D/UI" instance=ExtResource("13_shqx6")]
+[node name="Score" parent="Character/Camera2D/UI" instance=ExtResource("13_4sobe")]
 offset_left = 567.0
 offset_top = -316.0
 offset_right = 567.0
 offset_bottom = -316.0
 
-[node name="UI" parent="Character/Camera2D/UI" instance=ExtResource("9_l03xi")]
+[node name="UI" parent="Character/Camera2D/UI" instance=ExtResource("14_ljsg7")]
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
@@ -288,16 +288,16 @@ offset_bottom = -304.0
 grow_horizontal = 1
 grow_vertical = 1
 
-[node name="Skeleton" parent="." instance=ExtResource("15_0xkpf")]
+[node name="Skeleton" parent="." instance=ExtResource("15_axhrg")]
 position = Vector2(1774, 916)
 
 [node name="GuardRails" type="Node2D" parent="."]
 
-[node name="BounceBlock" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
+[node name="BounceBlock" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_rs5h2")]
 position = Vector2(1686, 923)
 
-[node name="Teleporter" parent="." instance=ExtResource("17_5fpoj")]
-position = Vector2(4021, 391)
+[node name="Teleporter" parent="." instance=ExtResource("17_xqxla")]
+position = Vector2(4023, 391)
 
 [connection signal="gem_collected" from="Gems/Gem" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
 [connection signal="gem_collected" from="Gems/Gem2" to="Character/Camera2D/UI/UI" method="_on_gem_gem_collected" flags=18]
@@ -321,10 +321,10 @@ position = Vector2(4021, 391)
 [connection signal="player_entered" from="DeathBoxes/DieBox5" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
 [connection signal="player_entered" from="DeathBoxes/DieBox6" to="Character" method="_on_die_box_player_entered" flags=18]
 [connection signal="player_entered" from="DeathBoxes/DieBox6" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
-[connection signal="death" from="Character" to="Character/Camera2D/UI/Lives" method="_on_character_death"]
-[connection signal="death" from="Character" to="Character/Camera2D/UI/UI" method="_on_character_death"]
-[connection signal="kill_mob" from="Character" to="Skeleton" method="_on_character_kill_mob"]
-[connection signal="player_died" from="Character/Camera2D/UI/Lives" to="Character/Camera2D/UI/Score" method="_on_lives_player_died"]
-[connection signal="gem_score" from="Character/Camera2D/UI/UI" to="Character/Camera2D/UI/Score" method="_on_ui_gem_score"]
-[connection signal="skeleton_attack" from="Skeleton" to="Character" method="_on_skeleton_skeleton_attack"]
-[connection signal="skeleton_score" from="Skeleton" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score"]
+[connection signal="death" from="Character" to="Character/Camera2D/UI/Lives" method="_on_character_death" flags=18]
+[connection signal="death" from="Character" to="Character/Camera2D/UI/UI" method="_on_character_death" flags=18]
+[connection signal="kill_mob" from="Character" to="Skeleton" method="_on_character_kill_mob" flags=18]
+[connection signal="player_died" from="Character/Camera2D/UI/Lives" to="Character/Camera2D/UI/Score" method="_on_lives_player_died" flags=18]
+[connection signal="gem_score" from="Character/Camera2D/UI/UI" to="Character/Camera2D/UI/Score" method="_on_ui_gem_score" flags=18]
+[connection signal="skeleton_attack" from="Skeleton" to="Character" method="_on_skeleton_skeleton_attack" flags=18]
+[connection signal="skeleton_score" from="Skeleton" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score" flags=18]
