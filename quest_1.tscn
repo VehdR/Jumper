@@ -194,7 +194,7 @@ scale = Vector2(2, 2)
 tile_set = ExtResource("8_gxsos")
 format = 2
 layer_0/name = "Platforms"
-layer_0/tile_data = PackedInt32Array(1376267, 1703936, 3, 1376268, 1769472, 3, 1376269, 1835008, 3, 1310731, 1900544, 1, 1245202, 1703936, 3, 1245203, 1769472, 3, 1245204, 1769472, 3, 1245205, 1769472, 3, 1245206, 1769472, 3, 1245207, 1769472, 3, 1245208, 1769472, 3, 1245209, 1769472, 3, 1245210, 1769472, 3, 1245211, 1835008, 3, 1114144, 1703936, 3, 1114145, 1769472, 3, 1114146, 1769472, 3, 1114147, 1769472, 3, 1114148, 1835008, 3, 1245226, 1638400, 7, 1179690, 1638400, 7, 1114154, 1638400, 7, 1048618, 1638400, 7, 983082, 1638400, 7, 917546, 1638400, 7, 852010, 1638400, 7, 786474, 1638400, 7, 720938, 1638400, 7, 1310762, 1638400, 8, 1310763, 1769472, 9, 1310764, 1835008, 9, 1245228, 1900544, 7, 1179692, 1900544, 7, 1114156, 1900544, 7, 1048620, 1900544, 7, 983084, 1900544, 7, 917548, 1900544, 7, 852012, 1900544, 7, 786476, 1900544, 7, 720940, 1900544, 7, 655402, 1703936, 5, 655403, 1769472, 5, 655404, 1835008, 5, 720939, 1769472, 7, 786475, 1769472, 7, 852011, 1769472, 7, 917547, 1769472, 7, 983083, 1769472, 7, 1048619, 1769472, 7, 1114155, 1769472, 7, 1179691, 1769472, 7, 1245227, 1769472, 7)
+layer_0/tile_data = PackedInt32Array(1376267, 1703936, 3, 1376268, 1769472, 3, 1376269, 1835008, 3, 1310731, 1900544, 1, 1245202, 1703936, 3, 1245203, 1769472, 3, 1245204, 1769472, 3, 1245205, 1769472, 3, 1245206, 1769472, 3, 1245207, 1769472, 3, 1245208, 1769472, 3, 1245209, 1769472, 3, 1245210, 1769472, 3, 1245211, 1835008, 3, 1114144, 1703936, 3, 1114145, 1769472, 3, 1114146, 1769472, 3, 1114147, 1769472, 3, 1114148, 1835008, 3, 1245226, 1638400, 7, 1179690, 1638400, 7, 1114154, 1638400, 7, 1048618, 1638400, 7, 983082, 1638400, 7, 917546, 1638400, 7, 852010, 1638400, 7, 786474, 1638400, 7, 720938, 1638400, 7, 1310762, 1638400, 8, 1310763, 1769472, 9, 1310764, 1835008, 9, 1245228, 1900544, 7, 1179692, 1900544, 7, 1114156, 1900544, 7, 1048620, 1900544, 7, 983084, 1900544, 7, 917548, 1900544, 7, 852012, 1900544, 7, 786476, 1900544, 7, 720940, 1900544, 7, 655402, 1703936, 5, 655403, 1769472, 5, 655404, 1835008, 5, 720939, 1769472, 7, 786475, 1769472, 7, 852011, 1769472, 7, 917547, 1769472, 7, 983083, 1769472, 7, 1048619, 1769472, 7, 1114155, 1769472, 7, 1179691, 1769472, 7, 1245227, 1769472, 7, 1179697, 1769472, 3, 1179698, 1769472, 3, 1179699, 1769472, 3, 1179700, 1769472, 3, 1179701, 1769472, 3, 1179702, 1769472, 3, 1179703, 1769472, 3, 1179704, 1769472, 3, 1179705, 1769472, 3, 1179706, 1769472, 3, 1179707, 1769472, 3, 1179708, 1769472, 3, 1179709, 1769472, 3, 1179710, 1769472, 3, 1179711, 1769472, 3, 1179712, 1769472, 3, 1179713, 1835008, 3, 1179696, 1703936, 3, 524359, 1703936, 5, 524360, 1769472, 5, 524361, 1835008, 5, 1048647, 1703936, 9, 1048648, 1769472, 9, 1048649, 1835008, 9, 589895, 1638400, 7, 655431, 1638400, 7, 720967, 1638400, 7, 786503, 1638400, 7, 852039, 1638400, 7, 917575, 1638400, 7, 983111, 1638400, 7, 589897, 1900544, 7, 655433, 1900544, 7, 720969, 1900544, 7, 786505, 1900544, 7, 852041, 1900544, 7, 917577, 1900544, 7, 983113, 1900544, 7, 589896, 1769472, 7, 655432, 1769472, 7, 720968, 1769472, 7, 786504, 1769472, 7, 852040, 1769472, 7, 917576, 1769472, 7, 983112, 1769472, 7, 65617, 1703936, 5, 65618, 1769472, 5, 65619, 1835008, 5, 655442, 1769472, 9, 655443, 1835008, 9, 131155, 1900544, 7, 196691, 1900544, 7, 262227, 1900544, 7, 327763, 1900544, 7, 393299, 1900544, 7, 458835, 1900544, 7, 524371, 1900544, 7, 589907, 1900544, 7, 131153, 1638400, 7, 196689, 1638400, 7, 262225, 1638400, 7, 327761, 1638400, 7, 393297, 1638400, 7, 458833, 1638400, 7, 524369, 1638400, 7, 589905, 1638400, 7, 655441, 1703936, 9, 131154, 1769472, 7, 196690, 1769472, 7, 262226, 1769472, 7, 327762, 1769472, 7, 393298, 1769472, 7, 458834, 1769472, 7, 524370, 1769472, 7, 589906, 1769472, 7, 917597, 1703936, 9, 917598, 1769472, 9, 917599, 1835008, 9, 852063, 1900544, 7, 786527, 1900544, 7, 720991, 1900544, 7, 655455, 1900544, 7, 589919, 1900544, 7, 524383, 1900544, 7, 458847, 1900544, 7, 393309, 1703936, 5, 393310, 1769472, 5, 393311, 1835008, 5, 458845, 1638400, 7, 524381, 1638400, 7, 589917, 1638400, 7, 655453, 1638400, 7, 720989, 1638400, 7, 786525, 1638400, 7, 852061, 1638400, 7, 458846, 1769472, 7, 524382, 1769472, 7, 589918, 1769472, 7, 655454, 1769472, 7, 720990, 1769472, 7, 786526, 1769472, 7, 852062, 1769472, 7, 196710, 1769472, 3, 196709, 1703936, 3, 196711, 1769472, 3, 196712, 1769472, 3, 196713, 1835008, 3, 65646, 1703936, 3, 65647, 1769472, 3, 65648, 1835008, 3, 852082, 1703936, 3, 852083, 1769472, 3, 852084, 1769472, 3, 852085, 1769472, 3, 852086, 1769472, 3, 852087, 1769472, 3, 852088, 1769472, 3, 852089, 1835008, 3)
 layer_1/name = "Decor"
 layer_1/enabled = true
 layer_1/modulate = Color(1, 1, 1, 1)
@@ -213,28 +213,28 @@ position = Vector2(441, 287.5)
 position = Vector2(658, 239)
 
 [node name="Gem3" parent="Gems" instance=ExtResource("9_xi2ng")]
-position = Vector2(1240, 175)
+position = Vector2(1242, 164.5)
 
 [node name="Gem4" parent="Gems" instance=ExtResource("9_xi2ng")]
-position = Vector2(1096, 495.5)
+position = Vector2(818.5, 233.5)
 
 [node name="Gem7" parent="Gems" instance=ExtResource("9_xi2ng")]
-position = Vector2(1128, 495.5)
+position = Vector2(918, 225)
 
 [node name="Gem10" parent="Gems" instance=ExtResource("9_xi2ng")]
-position = Vector2(1160, 495.5)
+position = Vector2(1014, 237)
 
 [node name="Gem5" parent="Gems" instance=ExtResource("9_xi2ng")]
-position = Vector2(1656, 159.5)
+position = Vector2(1784.5, -0.5)
 
 [node name="Gem8" parent="Gems" instance=ExtResource("9_xi2ng")]
-position = Vector2(1880, 207.5)
+position = Vector2(1944, 191.5)
 
 [node name="Gem9" parent="Gems" instance=ExtResource("9_xi2ng")]
-position = Vector2(1952.5, 127.5)
+position = Vector2(1840, 107.5)
 
 [node name="Gem6" parent="Gems" instance=ExtResource("9_xi2ng")]
-position = Vector2(1379, 349)
+position = Vector2(1445, 247)
 
 [node name="DeathBoxes" type="Node2D" parent="."]
 
@@ -293,10 +293,31 @@ position = Vector2(649, 563)
 scale = Vector2(2, 2)
 
 [node name="Skeleton" parent="Enemies" instance=ExtResource("15_0xkpf")]
+position = Vector2(0, 0.5)
 scale = Vector2(1, 1)
 
 [node name="Skeleton2" parent="Enemies" instance=ExtResource("15_0xkpf")]
 position = Vector2(210, -32)
+scale = Vector2(1, 1)
+
+[node name="Skeleton3" parent="Enemies" instance=ExtResource("15_0xkpf")]
+position = Vector2(462.5, -16)
+scale = Vector2(1, 1)
+
+[node name="Skeleton4" parent="Enemies" instance=ExtResource("15_0xkpf")]
+position = Vector2(572, -16)
+scale = Vector2(1, 1)
+
+[node name="Skeleton5" parent="Enemies" instance=ExtResource("15_0xkpf")]
+position = Vector2(663.5, -16)
+scale = Vector2(1, 1)
+
+[node name="Skeleton6" parent="Enemies" instance=ExtResource("15_0xkpf")]
+position = Vector2(1306, -256)
+scale = Vector2(1, 1)
+
+[node name="Skeleton7" parent="Enemies" instance=ExtResource("15_0xkpf")]
+position = Vector2(1516, -96)
 scale = Vector2(1, 1)
 
 [node name="GuardRails" type="Node2D" parent="."]
@@ -312,6 +333,30 @@ position = Vector2(1194, 514)
 
 [node name="BounceBlock2" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
 position = Vector2(844, 562)
+
+[node name="BounceBlock5" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
+position = Vector2(1526, 543)
+
+[node name="BounceBlock6" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
+position = Vector2(1740, 531)
+
+[node name="BounceBlock7" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
+position = Vector2(1932, 531)
+
+[node name="BounceBlock8" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
+position = Vector2(2122, 542)
+
+[node name="BounceBlock9" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
+position = Vector2(3222, 59)
+
+[node name="BounceBlock10" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
+position = Vector2(3402, 60)
+
+[node name="BounceBlock11" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
+position = Vector2(3638, 384)
+
+[node name="BounceBlock12" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_jy25y")]
+position = Vector2(3850, 371)
 
 [node name="Teleporter" parent="." instance=ExtResource("17_5fpoj")]
 position = Vector2(4021, 391)
@@ -342,9 +387,24 @@ position = Vector2(4021, 391)
 [connection signal="death" from="Character" to="Character/Camera2D/UI/UI" method="_on_character_death"]
 [connection signal="kill_mob" from="Character" to="Enemies/Skeleton" method="_on_character_kill_mob"]
 [connection signal="kill_mob" from="Character" to="Enemies/Skeleton2" method="_on_character_kill_mob"]
+[connection signal="kill_mob" from="Character" to="Enemies/Skeleton3" method="_on_character_kill_mob"]
+[connection signal="kill_mob" from="Character" to="Enemies/Skeleton4" method="_on_character_kill_mob"]
+[connection signal="kill_mob" from="Character" to="Enemies/Skeleton5" method="_on_character_kill_mob"]
+[connection signal="kill_mob" from="Character" to="Enemies/Skeleton6" method="_on_character_kill_mob"]
+[connection signal="kill_mob" from="Character" to="Enemies/Skeleton7" method="_on_character_kill_mob"]
 [connection signal="player_died" from="Character/Camera2D/UI/Lives" to="Character/Camera2D/UI/Score" method="_on_lives_player_died"]
 [connection signal="gem_score" from="Character/Camera2D/UI/UI" to="Character/Camera2D/UI/Score" method="_on_ui_gem_score"]
 [connection signal="skeleton_attack" from="Enemies/Skeleton" to="Character" method="_on_skeleton_skeleton_attack"]
 [connection signal="skeleton_score" from="Enemies/Skeleton" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score"]
 [connection signal="skeleton_attack" from="Enemies/Skeleton2" to="Character" method="_on_skeleton_skeleton_attack"]
 [connection signal="skeleton_score" from="Enemies/Skeleton2" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score"]
+[connection signal="skeleton_attack" from="Enemies/Skeleton3" to="Character" method="_on_skeleton_skeleton_attack"]
+[connection signal="skeleton_score" from="Enemies/Skeleton3" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score"]
+[connection signal="skeleton_attack" from="Enemies/Skeleton4" to="Character" method="_on_skeleton_skeleton_attack"]
+[connection signal="skeleton_score" from="Enemies/Skeleton4" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score"]
+[connection signal="skeleton_attack" from="Enemies/Skeleton5" to="Character" method="_on_skeleton_skeleton_attack"]
+[connection signal="skeleton_score" from="Enemies/Skeleton5" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score"]
+[connection signal="skeleton_attack" from="Enemies/Skeleton6" to="Character" method="_on_skeleton_skeleton_attack"]
+[connection signal="skeleton_score" from="Enemies/Skeleton6" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score"]
+[connection signal="skeleton_attack" from="Enemies/Skeleton7" to="Character" method="_on_skeleton_skeleton_attack"]
+[connection signal="skeleton_score" from="Enemies/Skeleton7" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score"]

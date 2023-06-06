@@ -24,3 +24,4 @@ res://speedrun_teleporter.tscn
 res://quest_3_teleporter.tscn
 res://quest_3_teleporter.gd
 res://tileset.tres
+res://die_box.gd

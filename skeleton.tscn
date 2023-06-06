@@ -155,7 +155,7 @@ polygon = PackedVector2Array(-3, 6, -6, 9, -6, 16, -7, 16, -7, 19, -6, 19, -6, 2
 sprite_frames = SubResource("SpriteFrames_gkq0v")
 animation = &"die"
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=["Skeletons"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(2, 14)

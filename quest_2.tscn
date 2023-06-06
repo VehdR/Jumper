@@ -276,13 +276,28 @@ offset_bottom = -304.0
 grow_horizontal = 1
 grow_vertical = 1
 
-[node name="Skeleton" parent="." instance=ExtResource("15_axhrg")]
-position = Vector2(1774, 916)
+[node name="Enemies" type="Node2D" parent="."]
+position = Vector2(2228, 804)
+scale = Vector2(2, 2)
+
+[node name="Skeleton" parent="Enemies" instance=ExtResource("15_axhrg")]
+position = Vector2(-227, 56)
+scale = Vector2(1, 1)
+
+[node name="Skeleton2" parent="Enemies" instance=ExtResource("15_axhrg")]
+position = Vector2(-2, 7.5)
+scale = Vector2(1, 1)
 
 [node name="GuardRails" type="Node2D" parent="."]
 
 [node name="BounceBlock" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_rs5h2")]
 position = Vector2(1686, 923)
+
+[node name="BounceBlock2" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_rs5h2")]
+position = Vector2(2143, 819)
+
+[node name="BounceBlock3" parent="GuardRails" groups=["GuardRails"] instance=ExtResource("16_rs5h2")]
+position = Vector2(2474, 831)
 
 [node name="Teleporter" parent="." instance=ExtResource("17_xqxla")]
 position = Vector2(4023, 391)
@@ -311,8 +326,11 @@ position = Vector2(4023, 391)
 [connection signal="player_entered" from="DeathBoxes/DieBox6" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
 [connection signal="death" from="Character" to="Character/Camera2D/UI/Lives" method="_on_character_death" flags=18]
 [connection signal="death" from="Character" to="Character/Camera2D/UI/UI" method="_on_character_death" flags=18]
-[connection signal="kill_mob" from="Character" to="Skeleton" method="_on_character_kill_mob" flags=18]
+[connection signal="kill_mob" from="Character" to="Enemies/Skeleton" method="_on_character_kill_mob" flags=18]
+[connection signal="kill_mob" from="Character" to="Enemies/Skeleton2" method="_on_character_kill_mob"]
 [connection signal="player_died" from="Character/Camera2D/UI/Lives" to="Character/Camera2D/UI/Score" method="_on_lives_player_died" flags=18]
 [connection signal="gem_score" from="Character/Camera2D/UI/UI" to="Character/Camera2D/UI/Score" method="_on_ui_gem_score" flags=18]
-[connection signal="skeleton_attack" from="Skeleton" to="Character" method="_on_skeleton_skeleton_attack" flags=18]
-[connection signal="skeleton_score" from="Skeleton" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score" flags=18]
+[connection signal="skeleton_attack" from="Enemies/Skeleton" to="Character" method="_on_skeleton_skeleton_attack" flags=18]
+[connection signal="skeleton_score" from="Enemies/Skeleton" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score" flags=18]
+[connection signal="skeleton_attack" from="Enemies/Skeleton2" to="Character" method="_on_skeleton_skeleton_attack" flags=18]
+[connection signal="skeleton_score" from="Enemies/Skeleton2" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score" flags=18]

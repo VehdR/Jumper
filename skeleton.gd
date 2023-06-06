@@ -58,12 +58,12 @@ func _physics_process(delta):
 
 func _on_area_2d_area_entered(area):
 	if curstate != State.DYING:
-		if area.is_in_group("GuardRails"):
+		if area.is_in_group("GuardRails") or area.is_in_group("Skeletons"):
 			if curstate == State.WALK_RIGHT:
 				switch_to(State.WALK_LEFT)
 			else:
 				switch_to(State.WALK_RIGHT)
-		else:
+		elif area.is_in_group("Player"):
 			Global.id = id
 			emit_signal("skeleton_attack")
 
