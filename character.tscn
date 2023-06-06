@@ -171,11 +171,6 @@ sprite_frames = SubResource("SpriteFrames_4xpr3")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="EnemyCollider" type="Area2D" parent="."]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="EnemyCollider"]
-polygon = PackedVector2Array(-5, 17.3333, 6, 17.3333, 4, -11.3333, -4, -11.6667)
-
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-5, 17.3333, 6, 17.3333, 4, -11.3333, -4, -11.6667)
 
