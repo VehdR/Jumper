@@ -166,18 +166,6 @@ texture = ExtResource("6_2e56k")
 [node name="GameText" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
 
-[node name="Label3" type="Label" parent="ParallaxBackground/GameText"]
-offset_left = 213.0
-offset_top = 495.0
-offset_right = 588.0
-offset_bottom = 553.0
-theme_override_fonts/font = ExtResource("7_dxy5g")
-theme_override_font_sizes/font_size = 25
-text = "Explore the world, 
-defeat mobs, 
-and win the boss fight!"
-horizontal_alignment = 1
-
 [node name="Label4" type="Label" parent="ParallaxBackground/GameText"]
 offset_left = 213.0
 offset_top = 718.0
@@ -185,7 +173,7 @@ offset_right = 588.0
 offset_bottom = 805.0
 theme_override_fonts/font = ExtResource("7_dxy5g")
 theme_override_font_sizes/font_size = 25
-text = "Press ESC to quit to the menu"
+text = "Level 2"
 horizontal_alignment = 1
 
 [node name="TileMap" type="TileMap" parent="."]

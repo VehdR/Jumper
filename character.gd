@@ -84,4 +84,6 @@ func _on_skeleton_skeleton_attack():
 	if attacking:
 		emit_signal("kill_mob")
 	else:
+		Global.id = 0
 		die()
+
