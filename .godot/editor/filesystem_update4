@@ -11,3 +11,4 @@ res://skeleton.tscn
 res://bounce_block.tscn
 res://quest_1.tscn
 res://skeleton.gd
+res://score.gd

@@ -8,13 +8,14 @@ signal death
 var num_jumps = 0
 var attack_timer = 0
 var attacking = false
+signal kill_mob
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
 	start_pos = position
-	$Area2D/SwordHitBox.disabled = true
+	$Sword/SwordHitBox.disabled = true
 
 func _physics_process(delta):
 	if Input.is_action_just_pressed("exit_to_menu"):
@@ -49,14 +50,14 @@ func _physics_process(delta):
 			
 	if attack_pressed:
 		$AnimatedSprite2D.play("attack")
-		$Area2D/SwordHitBox.disabled = false
+		$Sword/SwordHitBox.disabled = false
 		attacking = true
 	
 	if attacking:
 		attack_timer += delta
 		
 		if attack_timer >= 0.5:
-			$Area2D/SwordHitBox.disabled = true
+			$Sword/SwordHitBox.disabled = true
 			attacking = false
 			attack_timer = 0
 			
@@ -80,4 +81,7 @@ func _on_die_box_player_entered():
 	die()
 
 func _on_skeleton_skeleton_attack():
-	die()
+	if attacking:
+		emit_signal("kill_mob")
+	else:
+		die()

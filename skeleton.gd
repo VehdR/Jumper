@@ -14,6 +14,7 @@ var state_time = 0.0
 var HEALTH = 1
 var hits = 0
 signal skeleton_attack
+signal skeleton_score
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -58,3 +59,8 @@ func _on_area_2d_area_entered(area):
 			switch_to(State.WALK_RIGHT)
 	else:
 		emit_signal("skeleton_attack")
+
+
+func _on_character_kill_mob():
+	emit_signal("skeleton_score")
+	queue_free()

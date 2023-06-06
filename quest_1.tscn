@@ -1348,5 +1348,7 @@ position = Vector2(1686, 923)
 [connection signal="player_entered" from="DeathBoxes/DieBox6" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered" flags=18]
 [connection signal="death" from="Character" to="Character/Camera2D/UI/Lives" method="_on_character_death"]
 [connection signal="death" from="Character" to="Character/Camera2D/UI/UI" method="_on_character_death"]
+[connection signal="kill_mob" from="Character" to="Skeleton" method="_on_character_kill_mob"]
 [connection signal="gem_score" from="Character/Camera2D/UI/UI" to="Character/Camera2D/UI/Score" method="_on_ui_gem_score"]
 [connection signal="skeleton_attack" from="Skeleton" to="Character" method="_on_skeleton_skeleton_attack"]
+[connection signal="skeleton_score" from="Skeleton" to="Character/Camera2D/UI/Score" method="_on_skeleton_skeleton_score"]

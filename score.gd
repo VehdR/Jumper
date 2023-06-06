@@ -15,3 +15,7 @@ func _process(delta):
 func _on_ui_gem_score():
 	score = score + 42
 	$Label.text = str(score)
+
+func _on_skeleton_skeleton_score():
+	score = score + 100
+	$Label.text = str(score)
