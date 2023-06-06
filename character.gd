@@ -8,6 +8,7 @@ signal death
 var num_jumps = 0
 var attack_timer = 0
 var attacking = false
+var skeletons_killed = 0
 signal kill_mob
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -16,6 +17,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _ready():
 	start_pos = position
 	$Sword/SwordHitBox.disabled = true
+	skeletons_killed = 0
 
 func _physics_process(delta):
 	if Input.is_action_just_pressed("exit_to_menu"):
@@ -68,6 +70,9 @@ func _physics_process(delta):
 		
 	if on_floor or on_wall:
 		num_jumps = 0
+		
+	if skeletons_killed >= 25:
+		get_tree().change_scene_to_file("res://win_screen.tscn")
 
 	move_and_slide()
 	
@@ -83,6 +88,7 @@ func _on_die_box_player_entered():
 func _on_skeleton_skeleton_attack():
 	if attacking:
 		emit_signal("kill_mob")
+		skeletons_killed = skeletons_killed + 1
 	else:
 		Global.id = 0
 		die()
