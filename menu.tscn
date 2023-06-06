@@ -1280,5 +1280,3 @@ position = Vector2(174, 568)
 
 [node name="Teleporter" parent="." instance=ExtResource("10_60x0i")]
 position = Vector2(622, 472)
-
-[connection signal="body_entered" from="Teleporter" to="Character" method="_on_teleporter_body_entered"]
