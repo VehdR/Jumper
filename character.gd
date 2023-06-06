@@ -65,5 +65,5 @@ func _on_die_box_player_entered():
 func _on_teleporter_body_entered(body):
 	pass # Replace with function body.
 
-func _on_skeleton_skeleton_attack():
+func _on_skeleton_player_attack():
 	die()
