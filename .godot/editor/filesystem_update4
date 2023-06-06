@@ -27,3 +27,4 @@ res://tileset.tres
 res://die_box.gd
 res://win_screen.tscn
 res://win_screen.gd
+res://tutorial.tscn

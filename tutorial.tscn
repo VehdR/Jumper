@@ -1219,6 +1219,15 @@ theme_override_fonts/font = ExtResource("8_jpsja")
 theme_override_font_sizes/font_size = 25
 text = "Try double jumping!"
 
+[node name="Label6" type="Label" parent="ParallaxBackground/GameText"]
+offset_left = 3623.0
+offset_top = 534.0
+offset_right = 3991.0
+offset_bottom = 563.0
+theme_override_fonts/font = ExtResource("8_jpsja")
+theme_override_font_sizes/font_size = 25
+text = "Press ESC to return to the menu"
+
 [node name="Label4" type="Label" parent="ParallaxBackground/GameText"]
 offset_left = 3765.0
 offset_top = 351.0
@@ -1363,4 +1372,3 @@ grow_vertical = 1
 [connection signal="player_entered" from="DeathBoxes/DieBox5" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered"]
 [connection signal="player_entered" from="DeathBoxes/DieBox6" to="Character" method="_on_die_box_player_entered"]
 [connection signal="player_entered" from="DeathBoxes/DieBox6" to="Character/Camera2D/UI/UI" method="_on_die_box_player_entered"]
-[connection signal="respawn_gems" from="Character" to="Gems/Gem" method="_on_character_respawn_gems"]
